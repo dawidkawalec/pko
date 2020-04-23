@@ -307,3 +307,96 @@ require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibili
 if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
     require_once(get_template_directory() . '/inc/wp_bootstrap_navwalker.php');
 }
+
+
+//
+// Stylowanie admin menu
+//
+add_action('admin_head', 'custom_admin_style');
+
+function custom_admin_style() {
+  echo '<style>
+    #wpadminbar
+    {
+        background: #002346;
+    }
+    #adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open, #adminmenu .wp-has-current-submenu.opensub .wp-submenu, #adminmenu a.wp-has-current-submenu:focus+.wp-submenu, .no-js li.wp-has-current-submenu:hover .wp-submenu
+    {
+        background-color: #002346;
+    }
+    #adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap
+    {
+        background-color: #002E5B;
+    }
+    #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div, #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, .folded #adminmenu li.wp-has-current-submenu
+    {
+        background: #DD4A00;
+    }
+    #adminmenu li.menu-top:hover, #adminmenu li.opensub>a.menu-top, #adminmenu li>a.menu-top:focus 
+    {
+    background-color: #002346;
+    color: #fff;
+    }
+    #adminmenu .wp-submenu a:focus, #adminmenu .wp-submenu a:hover, #adminmenu a:hover, #adminmenu li.menu-top>a:focus 
+    {
+    color: #e0d5d2;
+    }
+    #adminmenu li a:focus div.wp-menu-image:before, #adminmenu li.opensub div.wp-menu-image:before, #adminmenu li:hover div.wp-menu-image:before
+    {
+    color: #e0d5d2;
+    }
+    #collapse-button:hover {
+    color: #e0d5d2;
+    font-weight: bold;
+    }
+    #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after 
+    {
+    border-right-color: #DD4A00;
+    }
+    #wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 3px 5px rgba(0,0,0,.2);
+    background: #002346;
+    display: none;
+    position: absolute;
+    float: none;
+    }
+    #wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item, #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus {
+    background: #002346;
+    color: #00b9eb;
+}
+#wpadminbar{
+
+    background: #002346;
+}
+
+  </style>';
+}
+
+//
+// Dodanie informacji o autorze
+//
+
+function dawidkawalec_add_dashboard_widget() {
+ wp_add_dashboard_widget( 'webinsider_add_dashboard_widget', 'Osoba odpowiedzialna za wdrożenie:', 'dawidkawalec_dashboard_widget_info' );
+}
+add_action( 'wp_dashboard_setup', 'dawidkawalec_add_dashboard_widget' );
+
+function dawidkawalec_dashboard_widget_info() {
+ echo "<ul>
+ <li><strong>Wdrożenie projektu: </strong>Dawid Kawalec</li>
+ <li><strong>Kontakt: </strong><a href='mailto:kontakt@dawidkawalec.pl'>kontakt@dawidkawalec.pl</a></li>
+ </ul>";
+}
+
+//
+// Usuwanie stopki standardowej
+//
+function remove_footer_admin () {
+ 
+echo 'Fueled by <a href="http://www.wordpress.org" target="_blank">WordPress</a> || Wdrożenie: <a href="mailto:kontakt@dawidkawalec.pl" target="_blank">Dawid Kawalec</a></p>';
+ 
+}
+ 
+add_filter('admin_footer_text', 'remove_footer_admin');  
