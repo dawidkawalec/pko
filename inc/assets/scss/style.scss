@@ -1,3 +1,28 @@
 /* 
-Here will go all custom scss for theme
+tutaj wrzucamy css
 */
+//
+//varriables
+//
+
+$primary: #002E5B;
+$cta: #DD4A00;
+$all_tr: all .5s;
+
+
+header#masthead2 {
+    margin-bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
+    padding: .74rem 1rem;
+
+    .navbar-nav>li>a {
+        color: $primary;
+        transition: $all_tr;
+
+        &:hover {
+            color: $cta;
+            transition: $all_tr;
+        }
+    }
+}
