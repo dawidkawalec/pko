@@ -1,24 +1,267 @@
 /* 
 tutaj wrzucamy css
 */
-header#masthead2 {
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+.container {
+  max-width: 1520px;
+}
+
+.btn-cta {
+  background: #DD4A00;
+  border: 2px solid #DD4A00;
+  border-radius: 2em;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: -6px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn-cta:hover {
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+}
+
+header#header-kancelaria {
   margin-bottom: 0;
   background-color: #fff;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  padding: .74rem 1rem;
+  padding: 30px 0 30px 0;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  left: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  z-index: 2;
 }
 
-header#masthead2 .navbar-nav>li>a {
+header#header-kancelaria .navbar {
+  padding: 0;
+  position: relative;
+}
+
+header#header-kancelaria .navbar #header-logo img {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  height: 150px;
+}
+
+header#header-kancelaria .navbar #header-logo.header-logo-fixed img {
+  bottom: -22px;
+  height: 90px;
+}
+
+header#header-kancelaria .navbar li {
+  margin-left: 20px;
+}
+
+header#header-kancelaria .navbar-nav>li>a {
   color: #002E5B;
+  font-size: 15px;
+  font-weight: 700;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-header#masthead2 .navbar-nav>li>a:hover {
+header#header-kancelaria .navbar-nav>li>a:hover {
   color: #DD4A00;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+header#header-kancelaria .navbar-nav .menu-cta a {
+  background: #DD4A00;
+  border: 2px solid #DD4A00;
+  border-radius: 2em;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: -6px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header#header-kancelaria .navbar-nav .menu-cta a:hover {
+  background: #fff;
+  color: #DD4A00;
+}
+
+#header-kancelaria.top-0 {
+  top: -100px;
+  position: absolute;
+}
+
+#header-kancelaria.fixed-top {
+  position: fixed;
+  top: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#before-header {
+  padding-bottom: 0px;
+}
+
+#before-header .before-header-wrapper {
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+#before-header .before-header-wrapper .hedaer-kontakt {
+  padding: 10px 30px 10px 35px;
+  position: relative;
+}
+
+#before-header .before-header-wrapper .hedaer-kontakt .thin {
+  font-weight: 400;
+}
+
+#before-header .before-header-wrapper .hedaer-kontakt .big {
+  font-weight: 800;
+}
+
+#before-header .before-header-wrapper .hedaer-kontakt p {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+#before-header .before-header-wrapper .hedaer-kontakt::before {
+  content: url("https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/phone.svg");
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+#before-header .before-header-wrapper .hedaer-kontakt::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #002e5b;
+  border-left: 2px solid #002e5b;
+  top: 22px;
+  right: 0;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+#before-header .before-header-wrapper .hedaer-godziny {
+  padding: 10px 40px 10px 35px;
+  position: relative;
+}
+
+#before-header .before-header-wrapper .hedaer-godziny .thin {
+  font-weight: 400;
+}
+
+#before-header .before-header-wrapper .hedaer-godziny .big {
+  font-weight: 800;
+}
+
+#before-header .before-header-wrapper .hedaer-godziny p {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+#before-header .before-header-wrapper .hedaer-godziny::before {
+  content: url("https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/clock.svg");
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+#before-header .before-header-wrapper .hedaer-godziny::after {
+  position: absolute;
+  content: '';
+  top: 15px;
+  right: 18px;
+  bottom: 15px;
+  width: 2px;
+  background: #E8E8E8;
+}
+
+#before-header .before-header-wrapper .header-fb {
+  padding: 6px 25px 0 25px;
+}
+
+#before-header .before-header-wrapper .header-fb img {
+  height: 50px;
+}
+
+#before-header .before-header-wrapper .header-google {
+  padding: 10px 0px 0 25px;
+}
+
+#before-header .before-header-wrapper .header-google img {
+  height: 42px;
+}
+
+.home-banner {
+  background: url("https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/AdobeStock_246426078.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 18rem 0 10rem 0;
+  position: relative;
+  color: #fff;
+}
+
+.home-banner::before {
+  content: '';
+  position: absolute;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 46, 91, 0)), color-stop(71.49%, #002E5B));
+  background: linear-gradient(270deg, rgba(0, 46, 91, 0) 0%, #002E5B 71.49%);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 40%;
+}
+
+.home-banner p {
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.home-banner h1 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.8em;
+  line-height: 1.8em;
+  margin: 2rem 0;
+}
+
+.home-o-nas {
+  padding: 10rem 0 5rem 0;
+}
+
+.home-o-nas .home-o-nas-wrapper {
+  position: relative;
+}
+
+.home-o-nas .home-o-nas-wrapper img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content {
+  background: #fff;
+  padding: 4em;
+  margin-top: 8em;
 }
 
 /*# sourceMappingURL=style.css.map */

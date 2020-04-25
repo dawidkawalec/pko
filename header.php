@@ -19,6 +19,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <?php wp_head(); ?>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -26,22 +28,37 @@
         <a class="skip-link screen-reader-text"
             href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?></a>
         <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
-        <header id="masthead2" class="site-header navbar-static-top <?php echo wp_bootstrap_starter_bg_class(); ?>"
-            role="banner">
+        <div id="before-header">
             <div class="container">
-                <nav class="navbar navbar-expand-md fixed-top">
-                    <!--<div class="navbar-brand">
-                        <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
-                        <a href="<?php echo esc_url( home_url( '/' )); ?>">
-                            <img src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>"
-                                alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
-                        </a>
-                        <?php else : ?>
-                        <a class="site-title"
-                            href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
-                        <?php endif; ?>
+                <div class="before-header-wrapper">
+                    <div class="header-google">
+                        <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/googlestars.png"
+                            alt="">
+                    </div>
+                    <div class="header-fb">
+                        <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/fblike.png"
+                            alt="">
+                    </div>
+                    <div class="hedaer-godziny">
+                        <p class="thin">Godziny otwarcia:</p>
+                        <p class="big">PN - PT: 8 - 20; SOB: 10 - 18</p>
+                    </div>
+                    <div class="hedaer-kontakt">
+                        <p class="thin">Menchester</p>
+                        <p class="big">0161 7914 669</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header id="header-kancelaria" class="site-header navbar-static-top" role="banner">
+            <div class="container">
+                <nav class="navbar navbar-expand-md header-nav">
 
-                    </div>-->
+                    <div id="header-logo">
+                        <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/logo-pko.png"
+                            alt="">
+                    </div>
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                         aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -64,9 +81,5 @@
                 </nav>
             </div>
         </header><!-- #masthead -->
-        <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
-        <div class="text-center">Tutaj będzie banner</div>
-        <?php endif; ?>
-
 
         <?php endif; ?>

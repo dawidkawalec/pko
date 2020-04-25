@@ -9,15 +9,73 @@ $primary: #002E5B;
 $cta: #DD4A00;
 $all_tr: all .5s;
 
+body {
+    font-family: 'Muli', sans-serif;
+}
 
-header#masthead2 {
+.container {
+    max-width: 1520px;
+}
+
+.btn-cta {
+    background: $cta;
+    border: 2px solid $cta;
+    border-radius: 2em;
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: -6px;
+    transition: $all_tr;
+
+    &:hover {
+        color: #fff;
+        background: transparent;
+        text-decoration: none;
+    }
+}
+
+
+header#header-kancelaria {
     margin-bottom: 0;
     background-color: #fff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
-    padding: .74rem 1rem;
+    padding: 30px 0 30px 0;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    left: 0;
+    transition: all 1s;
+    z-index: 2;
+
+
+    .navbar {
+        padding: 0;
+        position: relative;
+
+        #header-logo {
+            img {
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                height: 150px;
+            }
+        }
+
+        #header-logo.header-logo-fixed {
+            img {
+                bottom: -22px;
+                height: 90px;
+            }
+        }
+
+        li {
+            margin-left: 20px;
+        }
+    }
 
     .navbar-nav>li>a {
         color: $primary;
+        font-size: 15px;
+        font-weight: 700;
         transition: $all_tr;
 
         &:hover {
@@ -25,4 +83,137 @@ header#masthead2 {
             transition: $all_tr;
         }
     }
+
+    .navbar-nav .menu-cta {
+
+        a {
+            background: $cta;
+            border: 2px solid $cta;
+            border-radius: 2em;
+            color: #fff;
+            padding: 10px 30px;
+            margin-top: -6px;
+            transition: $all_tr;
+
+            &:hover {
+                background: #fff;
+                color: $cta;
+            }
+        }
+    }
 }
+
+#header-kancelaria.top-0 {
+    top: -100px;
+    position: absolute;
+}
+
+#header-kancelaria.fixed-top {
+    position: fixed;
+    top: 0;
+    transition: all 1s;
+}
+
+#before-header {
+    padding-bottom: 0px;
+
+    .before-header-wrapper {
+        height: 64px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        .hedaer-kontakt {
+            padding: 10px 30px 10px 35px;
+            position: relative;
+
+            .thin {
+                font-weight: 400;
+            }
+
+            .big {
+                font-weight: 800;
+            }
+
+            p {
+                margin-bottom: 0;
+                font-size: 13px;
+            }
+
+            &::before {
+                content: url('https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/phone.svg');
+                position: absolute;
+                left: 0;
+                top: 20px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-top: 2px solid #002e5b;
+                border-left: 2px solid #002e5b;
+                top: 22px;
+                right: 0;
+                transform: rotate(-135deg);
+            }
+        }
+
+        .hedaer-godziny {
+            padding: 10px 40px 10px 35px;
+            position: relative;
+
+            .thin {
+                font-weight: 400;
+            }
+
+            .big {
+                font-weight: 800;
+            }
+
+            p {
+                margin-bottom: 0;
+                font-size: 13px;
+            }
+
+            &::before {
+                content: url('https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/clock.svg');
+                position: absolute;
+                left: 0;
+                top: 20px;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: 15px;
+                right: 18px;
+                bottom: 15px;
+                width: 2px;
+                background: #E8E8E8;
+            }
+        }
+
+        .header-fb {
+            padding: 6px 25px 0 25px;
+
+            img {
+                height: 50px;
+            }
+        }
+
+        .header-google {
+            padding: 10px 0px 0 25px;
+
+            img {
+                height: 42px;
+            }
+        }
+    }
+}
+
+
+
+//imports
+@import "home";

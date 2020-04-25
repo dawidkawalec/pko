@@ -1,0 +1,53 @@
+.home-banner {
+    background: url('https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/AdobeStock_246426078.jpg')no-repeat center center;
+    background-size: cover;
+    padding: 18rem 0 10rem 0;
+    position: relative;
+    color: #fff;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(270deg, rgba(0, 46, 91, 0) 0%, #002E5B 71.49%);
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 40%;
+    }
+
+    p {
+        font-size: 1em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    h1 {
+        color: #fff;
+        font-weight: 900;
+        font-size: 1.8em;
+        line-height: 1.8em;
+        margin: 2rem 0;
+    }
+}
+
+.home-o-nas {
+    padding: 10rem 0 5rem 0;
+
+    .home-o-nas-wrapper {
+        position: relative;
+
+        img {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+        .home-o-nas-content {
+            background: #fff;
+            padding: 4em;
+            margin-top: 8em;
+        }
+    }
+}
