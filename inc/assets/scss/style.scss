@@ -17,6 +17,10 @@ body {
     max-width: 1520px;
 }
 
+.bg-gray {
+    background-color: #F7F7F7;
+}
+
 .btn-cta {
     background: $cta;
     border: 2px solid $cta;
@@ -30,6 +34,24 @@ body {
         color: #fff;
         background: transparent;
         text-decoration: none;
+    }
+}
+
+.section-content {
+    .before-title {
+        color: #98B5C5;
+        text-transform: uppercase;
+        font-size: .9em;
+        font-weight: 600;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        color: #002E5B;
+        font-size: 2em;
+        font-weight: 800;
+        margin-top: 0;
     }
 }
 
@@ -217,3 +239,4 @@ header#header-kancelaria {
 
 //imports
 @import "home";
+@import "dlaczego-kafle";

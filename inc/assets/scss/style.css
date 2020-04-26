@@ -9,6 +9,10 @@ body {
   max-width: 1520px;
 }
 
+.bg-gray {
+  background-color: #F7F7F7;
+}
+
 .btn-cta {
   background: #DD4A00;
   border: 2px solid #DD4A00;
@@ -24,6 +28,22 @@ body {
   color: #fff;
   background: transparent;
   text-decoration: none;
+}
+
+.section-content .before-title {
+  color: #98B5C5;
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: 600;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.section-content h2 {
+  color: #002E5B;
+  font-size: 2em;
+  font-weight: 800;
+  margin-top: 0;
 }
 
 header#header-kancelaria {
@@ -212,7 +232,7 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
 .home-banner {
   background: url("https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/AdobeStock_246426078.jpg") no-repeat center center;
   background-size: cover;
-  padding: 18rem 0 10rem 0;
+  padding: 14rem 0 10rem 0;
   position: relative;
   color: #fff;
 }
@@ -260,8 +280,124 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
 
 .home-o-nas .home-o-nas-wrapper .home-o-nas-content {
   background: #fff;
-  padding: 4em;
+  padding: 3em 2em 3em 3em;
   margin-top: 8em;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content .before-title {
+  color: #98B5C5;
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: 600;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content h2 {
+  color: #002E5B;
+  font-size: 2em;
+  font-weight: 800;
+  margin-top: 0;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content #accordion-o-nas h3 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content #accordion-o-nas h3 a {
+  font-size: .95em;
+  font-weight: 700;
+  color: #002E5B;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content #accordion-o-nas h3 a::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 40px;
+  border-bottom: 2px dashed #D5D5D5;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content #accordion-o-nas h3 a::after {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 700;
+  top: 3px;
+  right: 6px;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  color: #fff;
+  z-index: 2;
+  display: block;
+  text-align: center;
+  line-height: 16px;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content #accordion-o-nas h3 a span {
+  background-color: #fff;
+  padding-right: 1em;
+  z-index: 1;
+  position: relative;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content #accordion-o-nas h3 a.collapse::after {
+  content: '+';
+  background: #DD4A00;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content #accordion-o-nas h3 a.collapsed::after {
+  content: '-';
+  background: #002E5B;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content #accordion-o-nas p {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: -.4px;
+  color: #444;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content #accordion-o-nas p a {
+  color: #DD4A00;
+  font-weight: 600;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content .btn-cta {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.home-o-nas .home-o-nas-wrapper .home-o-nas-content .btn-cta:hover {
+  color: #DD4A00;
+}
+
+.dlaczego-kafle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.dlaczego-kafel {
+  width: 20%;
+  padding: 1em;
+}
+
+.dlaczego-kafel:first-child {
+  width: 40%;
+}
+
+.dlaczego-kafel .dlaczego-kafel-container {
+  border: 2px solid;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

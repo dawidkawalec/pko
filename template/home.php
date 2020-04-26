@@ -7,6 +7,9 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/home-banner');?>
 <?php get_template_part( 'template-parts/home-o-nas');?>
+<?php get_template_part( 'template-parts/home-dlaczego-kafle');?>
+
+
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae nesciunt eaque magni cumque consequatur, aliquam
     tempora assumenda nihil minus soluta et ipsa adipisci consequuntur quasi modi unde iusto nemo laudantium labore,
     optio totam ut facilis, repellat quos. Aliquid ducimus id cumque laborum delectus quod animi totam, dignissimos

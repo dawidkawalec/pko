@@ -17,90 +17,82 @@
                 <div class="home-o-nas-content">
                     <p class="before-title">Więcej o nas</p>
                     <h2>Polska Kancelaria Odszkodowań ™</h2>
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        Collapsible Group Item #1
-                                    </button>
-                                </h5>
+                    <div id="accordion-o-nas">
+                        <div id="pytanie1">
+                            <div id="headingOne">
+                                <h3>
+                                    <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne" class="collapse">
+                                        <span>KIM JESTEŚMY?</span>
+                                    </a>
+                                </h3>
                             </div>
 
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                data-parent="#accordion">
-                                <div class="card-body">
+                                data-parent="#accordion-o-nas">
+                                <p>
+                                    Polska Kancelaria Odszkodowań™ jest polsko – angielską kancelarią prawną zajmującą
+                                    się uzyskiwaniem odszkodowania w UK, działającą na zasadzie NO WIN – NO FEE
+                                    z gwarancją przejrzystości kosztów. Posiadamy w sumie 65 lat doświadczenia, jako
+                                    prawnicy od odszkodowań. <a href="#">Zobacz najczęściej zadawane pytania o
+                                        odszkodowania w UK.</a>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div id="pytanie2">
+                            <div id="heading2">
+                                <h3>
+                                    <a data-toggle="collapse" data-target="#collapse2" aria-expanded="true"
+                                        aria-controls="collapse2" class="collapse collapsed">
+                                        <span>DLACZEGO MY?</span>
+                                    </a>
+                                </h3>
+                            </div>
+
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2"
+                                data-parent="#accordion-o-nas">
+                                <p>
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                                     richardson ad
                                     squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
                                     quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
                                     on it
                                     squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                                    helvetica,
-                                    craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-                                    excepteur
-                                    butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                    synth
-                                    nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
+
+                                </p>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Collapsible Group Item #2
-                                    </button>
-                                </h5>
+
+
+                        <div id="pytanie3">
+                            <div id="heading3">
+                                <h3>
+                                    <a data-toggle="collapse" data-target="#collapse3" aria-expanded="true"
+                                        aria-controls="collapse3" class="collapse collapsed">
+                                        <span>JESTEŚMY NOWOCZEŚNI TECHNOLOGICZNIE</span>
+                                    </a>
+                                </h3>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                data-parent="#accordion">
-                                <div class="card-body">
+
+                            <div id="collapse3" class="collapse" aria-labelledby="heading3"
+                                data-parent="#accordion-o-nas">
+                                <p>
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                                     richardson ad
                                     squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
                                     quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
                                     on it
                                     squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                                    helvetica,
-                                    craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-                                    excepteur
-                                    butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                    synth
-                                    nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
+
+                                </p>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        Collapsible Group Item #3
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                data-parent="#accordion">
-                                <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad
-                                    squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                    on it
-                                    squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                                    helvetica,
-                                    craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-                                    excepteur
-                                    butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                    synth
-                                    nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
+
+
+
+
                     </div>
                     <a href="#" class="btn-cta">Skontaktuj się z nami</a>
                 </div>

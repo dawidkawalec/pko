@@ -1,0 +1,18 @@
+.dlaczego-kafle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dlaczego-kafel {
+    width: 20%;
+    padding: 1em;
+
+    &:first-child {
+        width: 40%;
+    }
+
+    .dlaczego-kafel-container {
+        border: 2px solid;
+        height: 100%;
+    }
+}

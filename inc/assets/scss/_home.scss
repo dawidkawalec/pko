@@ -1,7 +1,7 @@
 .home-banner {
     background: url('https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/AdobeStock_246426078.jpg')no-repeat center center;
     background-size: cover;
-    padding: 18rem 0 10rem 0;
+    padding: 14rem 0 10rem 0;
     position: relative;
     color: #fff;
 
@@ -46,8 +46,113 @@
 
         .home-o-nas-content {
             background: #fff;
-            padding: 4em;
+            padding: 3em 2em 3em 3em;
             margin-top: 8em;
+
+            .before-title {
+                color: #98B5C5;
+                text-transform: uppercase;
+                font-size: .9em;
+                font-weight: 600;
+                margin-bottom: 0;
+                letter-spacing: 2px;
+            }
+
+            h2 {
+                color: #002E5B;
+                font-size: 2em;
+                font-weight: 800;
+                margin-top: 0;
+            }
+
+            #accordion-o-nas {
+                h3 {
+                    margin: 0;
+                    padding: 10px 0;
+
+                    a {
+                        font-size: .95em;
+                        font-weight: 700;
+                        color: $primary;
+                        text-transform: uppercase;
+                        position: relative;
+                        cursor: pointer;
+                        display: block;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 12px;
+                            left: 0;
+                            right: 40px;
+                            border-bottom: 2px dashed #D5D5D5;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            font-size: 14px;
+                            font-weight: 700;
+                            top: 3px;
+                            right: 6px;
+                            height: 17px;
+                            width: 17px;
+                            border-radius: 50%;
+                            color: #fff;
+                            z-index: 2;
+                            display: block;
+                            text-align: center;
+                            line-height: 16px;
+                        }
+
+
+
+                        span {
+                            background-color: #fff;
+                            padding-right: 1em;
+                            z-index: 1;
+                            position: relative;
+                        }
+                    }
+
+
+
+                    a.collapse {
+                        &::after {
+                            content: '+';
+                            background: $cta;
+
+                        }
+                    }
+
+                    a.collapsed {
+                        &::after {
+                            content: '-';
+                            background: $primary;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 1em;
+                    font-weight: 400;
+                    letter-spacing: -.4px;
+                    color: #444;
+
+                    a {
+                        color: $cta;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .btn-cta {
+                margin-top: 10px;
+                display: inline-block;
+
+                &:hover {
+                    color: $cta;
+                }
+            }
         }
     }
 }

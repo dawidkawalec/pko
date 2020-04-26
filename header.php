@@ -52,7 +52,7 @@
         </div>
         <header id="header-kancelaria" class="site-header navbar-static-top" role="banner">
             <div class="container">
-                <nav class="navbar navbar-expand-md header-nav">
+                <nav class="navbar navbar-expand-xl header-nav">
 
                     <div id="header-logo">
                         <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/logo-pko.png"
