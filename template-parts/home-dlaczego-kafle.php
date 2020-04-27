@@ -20,8 +20,9 @@
                     <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/conversation.svg"
                         alt="">
                     <h3>Negocjujemy gotówkę</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia earum sunt, temporibus delectus
-                        fugiat sed aut dicta tenetur necessitatibus porro laudantium, </p>
+                    <p>Negocjujemy w imieniu Klienta wypłatę odszkodowania
+                        w formie gotówkowej również za uszkodzenia pojazdu
+                    </p>
                 </div>
             </div>
             <div class="dlaczego-kafel">
@@ -29,8 +30,9 @@
                     <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/conversation.svg"
                         alt="">
                     <h3>Negocjujemy gotówkę</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia earum sunt, temporibus delectus
-                        fugiat sed aut dicta tenetur necessitatibus porro laudantium, </p>
+                    <p>Negocjujemy w imieniu Klienta wypłatę odszkodowania
+                        w formie gotówkowej również za uszkodzenia pojazdu
+                    </p>
                 </div>
             </div>
             <div class="dlaczego-kafel">
@@ -38,8 +40,9 @@
                     <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/conversation.svg"
                         alt="">
                     <h3>Negocjujemy gotówkę</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia earum sunt, temporibus delectus
-                        fugiat sed aut dicta tenetur necessitatibus porro laudantium, </p>
+                    <p>Negocjujemy w imieniu Klienta wypłatę odszkodowania
+                        w formie gotówkowej również za uszkodzenia pojazdu
+                    </p>
                 </div>
             </div>
             <div class="dlaczego-kafel">
@@ -47,8 +50,9 @@
                     <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/conversation.svg"
                         alt="">
                     <h3>Negocjujemy gotówkę</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia earum sunt, temporibus delectus
-                        fugiat sed aut dicta tenetur necessitatibus porro laudantium, </p>
+                    <p>Negocjujemy w imieniu Klienta wypłatę odszkodowania
+                        w formie gotówkowej również za uszkodzenia pojazdu
+                    </p>
                 </div>
             </div>
             <div class="dlaczego-kafel">
@@ -56,8 +60,9 @@
                     <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/conversation.svg"
                         alt="">
                     <h3>Negocjujemy gotówkę</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia earum sunt, temporibus delectus
-                        fugiat sed aut dicta tenetur necessitatibus porro laudantium, </p>
+                    <p>Negocjujemy w imieniu Klienta wypłatę odszkodowania
+                        w formie gotówkowej również za uszkodzenia pojazdu
+                    </p>
                 </div>
             </div>
             <div class="dlaczego-kafel">
@@ -65,8 +70,9 @@
                     <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/conversation.svg"
                         alt="">
                     <h3>Negocjujemy gotówkę</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia earum sunt, temporibus delectus
-                        fugiat sed aut dicta tenetur necessitatibus porro laudantium, </p>
+                    <p>Negocjujemy w imieniu Klienta wypłatę odszkodowania
+                        w formie gotówkowej również za uszkodzenia pojazdu
+                    </p>
                 </div>
             </div>
             <div class="dlaczego-kafel">
@@ -74,8 +80,9 @@
                     <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/conversation.svg"
                         alt="">
                     <h3>Negocjujemy gotówkę</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia earum sunt, temporibus delectus
-                        fugiat sed aut dicta tenetur necessitatibus porro laudantium, </p>
+                    <p>Negocjujemy w imieniu Klienta wypłatę odszkodowania
+                        w formie gotówkowej również za uszkodzenia pojazdu
+                    </p>
                 </div>
             </div>
             <div class="dlaczego-kafel">
@@ -83,8 +90,9 @@
                     <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/conversation.svg"
                         alt="">
                     <h3>Negocjujemy gotówkę</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia earum sunt, temporibus delectus
-                        fugiat sed aut dicta tenetur necessitatibus porro laudantium, </p>
+                    <p>Negocjujemy w imieniu Klienta wypłatę odszkodowania
+                        w formie gotówkowej również za uszkodzenia pojazdu
+                    </p>
                 </div>
             </div>
             <div class="dlaczego-kafel">
@@ -92,8 +100,9 @@
                     <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/conversation.svg"
                         alt="">
                     <h3>Negocjujemy gotówkę</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia earum sunt, temporibus delectus
-                        fugiat sed aut dicta tenetur necessitatibus porro laudantium, </p>
+                    <p>Negocjujemy w imieniu Klienta wypłatę odszkodowania
+                        w formie gotówkowej również za uszkodzenia pojazdu
+                    </p>
                 </div>
             </div>
         </div>

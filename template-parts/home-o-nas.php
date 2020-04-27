@@ -54,13 +54,11 @@
                             <div id="collapse2" class="collapse" aria-labelledby="heading2"
                                 data-parent="#accordion-o-nas">
                                 <p>
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad
-                                    squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                    on it
-                                    squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-
+                                    Polska Kancelaria Odszkodowań™ jest polsko – angielską kancelarią prawną zajmującą
+                                    się uzyskiwaniem odszkodowania w UK, działającą na zasadzie NO WIN – NO FEE
+                                    z gwarancją przejrzystości kosztów. Posiadamy w sumie 65 lat doświadczenia, jako
+                                    prawnicy od odszkodowań. <a href="#">Zobacz najczęściej zadawane pytania o
+                                        odszkodowania w UK.</a>
                                 </p>
                             </div>
                         </div>
@@ -79,13 +77,11 @@
                             <div id="collapse3" class="collapse" aria-labelledby="heading3"
                                 data-parent="#accordion-o-nas">
                                 <p>
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad
-                                    squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                    on it
-                                    squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-
+                                    Polska Kancelaria Odszkodowań™ jest polsko – angielską kancelarią prawną zajmującą
+                                    się uzyskiwaniem odszkodowania w UK, działającą na zasadzie NO WIN – NO FEE
+                                    z gwarancją przejrzystości kosztów. Posiadamy w sumie 65 lat doświadczenia, jako
+                                    prawnicy od odszkodowań. <a href="#">Zobacz najczęściej zadawane pytania o
+                                        odszkodowania w UK.</a>
                                 </p>
                             </div>
                         </div>

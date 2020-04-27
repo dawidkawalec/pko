@@ -230,7 +230,7 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
 }
 
 .home-banner {
-  background: url("https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/AdobeStock_246426078.jpg") no-repeat center center;
+  background: url("/wp-content/uploads/2020/04/AdobeStock_246426078.jpg") no-repeat center center;
   background-size: cover;
   padding: 14rem 0 10rem 0;
   position: relative;
@@ -362,6 +362,7 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
   font-weight: 400;
   letter-spacing: -.4px;
   color: #444;
+  margin-bottom: 0;
 }
 
 .home-o-nas .home-o-nas-wrapper .home-o-nas-content #accordion-o-nas p a {
@@ -386,18 +387,65 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
   flex-wrap: wrap;
 }
 
-.dlaczego-kafel {
+.dlaczego-kafle .dlaczego-kafel {
   width: 20%;
-  padding: 1em;
+  padding: .5em;
 }
 
-.dlaczego-kafel:first-child {
+.dlaczego-kafle .dlaczego-kafel:first-child {
   width: 40%;
 }
 
-.dlaczego-kafel .dlaczego-kafel-container {
-  border: 2px solid;
+.dlaczego-kafle .dlaczego-kafel .dlaczego-kafel-container {
   height: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0 0 25px #0000000a;
+  box-shadow: 0 0 25px #0000000a;
+  padding: 1.5em;
+}
+
+.dlaczego-kafle .dlaczego-kafel .dlaczego-kafel-container h3 {
+  color: #061D38;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.dlaczego-kafle .dlaczego-kafel .dlaczego-kafel-container p {
+  color: #6D6D6D;
+  font-size: .9em;
+}
+
+.home-dlaczego-kafle {
+  background-color: #F7F7F7;
+  padding: 6em 0;
+}
+
+.home-oferta {
+  background: url("/wp-content/uploads/2020/04/sean-pollock-PhYq704ffdA-unsplash-1.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 6em 0;
+}
+
+@media (max-width: 1200px) {
+  .dlaczego-kafle .dlaczego-kafel {
+    width: 50%;
+    padding: 1em;
+  }
+
+  .dlaczego-kafle .dlaczego-kafel:first-child {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .dlaczego-kafle .dlaczego-kafel {
+    width: 100%;
+    padding: .5em;
+  }
+
+  .dlaczego-kafle .dlaczego-kafel:first-child {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

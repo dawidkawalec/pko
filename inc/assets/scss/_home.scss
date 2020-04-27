@@ -1,5 +1,5 @@
 .home-banner {
-    background: url('https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/AdobeStock_246426078.jpg')no-repeat center center;
+    background: url('/wp-content/uploads/2020/04/AdobeStock_246426078.jpg')no-repeat center center;
     background-size: cover;
     padding: 14rem 0 10rem 0;
     position: relative;
@@ -137,6 +137,7 @@
                     font-weight: 400;
                     letter-spacing: -.4px;
                     color: #444;
+                    margin-bottom: 0;
 
                     a {
                         color: $cta;
@@ -155,4 +156,49 @@
             }
         }
     }
+}
+
+.dlaczego-kafle {
+    display: flex;
+    flex-wrap: wrap;
+
+    .dlaczego-kafel {
+        width: 20%;
+        padding: .5em;
+
+        &:first-child {
+            width: 40%;
+        }
+
+        .dlaczego-kafel-container {
+            height: 100%;
+            background: #fff;
+            box-shadow: 0 0 25px #0000000a;
+            padding: 1.5em;
+
+            h3 {
+                color: #061D38;
+                font-weight: 700;
+                font-size: 1.1em;
+            }
+
+            p {
+                color: #6D6D6D;
+                font-size: .9em;
+            }
+
+        }
+    }
+}
+
+.home-dlaczego-kafle {
+    background-color: #F7F7F7;
+    padding: 6em 0;
+}
+
+
+.home-oferta {
+    background: url('/wp-content/uploads/2020/04/sean-pollock-PhYq704ffdA-unsplash-1.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 6em 0;
 }

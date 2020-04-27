@@ -1,0 +1,25 @@
+@media (max-width: 1200px) {
+    .dlaczego-kafle {
+        .dlaczego-kafel {
+            width: 50%;
+            padding: 1em;
+
+            &:first-child {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .dlaczego-kafle {
+        .dlaczego-kafel {
+            width: 100%;
+            padding: .5em;
+
+            &:first-child {
+                width: 100%;
+            }
+        }
+    }
+}
