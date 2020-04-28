@@ -52,6 +52,19 @@ body {
         font-size: 2em;
         font-weight: 800;
         margin-top: 0;
+        position: relative;
+        margin-bottom: 1em;
+
+        &::after {
+            position: absolute;
+            content: '';
+            height: 4px;
+            width: 120px;
+            z-index: 2;
+            bottom: -10px;
+            background: #F56922;
+            left: calc(50% - 60px);
+        }
     }
 }
 
