@@ -10,6 +10,8 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/home-dlaczego-kafle');?>
 <?php get_template_part( 'template-parts/home-oferta');?>
 <?php get_template_part( 'template-parts/home-jak-wyglada');?>
+<?php get_template_part( 'template-parts/home-formularz');?>
+<?php get_template_part( 'template-parts/home-faq');?>
 
 
 <p style="margin-top:100px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae nesciunt eaque magni
