@@ -764,6 +764,95 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
   background: #f7f7f7;
 }
 
+.home-referencje {
+  background: #f7f7f7;
+  padding: 5rem 0;
+}
+
+.home-referencje .under-title {
+  color: #DD4A00;
+  margin-bottom: 2em;
+  display: block;
+  font-weight: 800;
+}
+
+.home-referencje .swiper-container {
+  padding: 2em 0;
+}
+
+.home-referencje .swiper-container .swiper-slide-next::after {
+  position: absolute;
+  content: '';
+  top: -2em;
+  bottom: -2em;
+  left: 0;
+  right: -1em;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(247, 247, 247, 0.25)), color-stop(65%, #f7f7f7));
+  background: linear-gradient(90deg, rgba(247, 247, 247, 0.25) 0%, #f7f7f7 65%);
+}
+
+.home-referencje .swiper-container .swiper-slide-prev::after {
+  position: absolute;
+  content: '';
+  top: -2em;
+  bottom: -2em;
+  left: 0;
+  right: -1em;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(247, 247, 247, 0.25)), color-stop(65%, #f7f7f7));
+  background: linear-gradient(270deg, rgba(247, 247, 247, 0.25) 0%, #f7f7f7 65%);
+}
+
+.home-referencje .referencja {
+  background: #fff;
+  padding: 2em;
+  border-top-right-radius: 4em;
+  border-bottom-left-radius: 4em;
+  -webkit-box-shadow: 0 0 19px #00000012;
+  box-shadow: 0 0 19px #00000012;
+  position: relative;
+}
+
+.home-referencje .referencja::after {
+  position: absolute;
+  content: url("/wp-content/uploads/2020/05/quote.svg");
+  top: 2em;
+  left: 2em;
+}
+
+.home-referencje .referencja .ocena {
+  text-align: right;
+  padding-right: 2em;
+  letter-spacing: 1px;
+}
+
+.home-referencje .referencja .ocena span {
+  font-weight: 800;
+}
+
+.home-referencje .referencja .ocena img {
+  height: 16px;
+  margin-top: -5px;
+}
+
+.home-referencje .referencja .referencja__name {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #2A2A2A;
+}
+
+.home-referencje .referencja .referencja__link {
+  color: #DD4A00;
+  margin-bottom: 1.5em;
+  display: block;
+}
+
+.home-referencje .referencja .referencja__opinia {
+  font-weight: 600;
+  color: #002E5B;
+}
+
 @media (max-width: 1200px) {
   .dlaczego-kafle .dlaczego-kafel {
     width: 50%;

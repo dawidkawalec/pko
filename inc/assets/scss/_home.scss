@@ -552,3 +552,93 @@
     }
 
 }
+
+.home-referencje {
+    background: #f7f7f7;
+    padding: 5rem 0;
+
+    .under-title {
+        color: $cta;
+        margin-bottom: 2em;
+        display: block;
+        font-weight: 800;
+    }
+
+    .swiper-container {
+        padding: 2em 0;
+
+        .swiper-slide-next {
+            &::after {
+                position: absolute;
+                content: '';
+                top: -2em;
+                bottom: -2em;
+                left: 0;
+                right: -1em;
+                background: linear-gradient(90deg, rgba(247, 247, 247, 0.25) 0%, #f7f7f7 65%);
+            }
+        }
+
+        .swiper-slide-prev {
+            &::after {
+                position: absolute;
+                content: '';
+                top: -2em;
+                bottom: -2em;
+                left: 0;
+                right: -1em;
+                background: linear-gradient(270deg, rgba(247, 247, 247, 0.25) 0%, #f7f7f7 65%);
+            }
+        }
+    }
+
+    .referencja {
+        background: #fff;
+        padding: 2em;
+        border-top-right-radius: 4em;
+        border-bottom-left-radius: 4em;
+        box-shadow: 0 0 19px #00000012;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: url('/wp-content/uploads/2020/05/quote.svg');
+            top: 2em;
+            left: 2em;
+        }
+
+        .ocena {
+            text-align: right;
+            padding-right: 2em;
+            letter-spacing: 1px;
+
+            span {
+                font-weight: 800;
+            }
+
+            img {
+                height: 16px;
+                margin-top: -5px;
+            }
+        }
+
+        .referencja__name {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            font-weight: 700;
+            font-size: 1.2em;
+            color: #2A2A2A;
+        }
+
+        .referencja__link {
+            color: $cta;
+            margin-bottom: 1.5em;
+            display: block;
+        }
+
+        .referencja__opinia {
+            font-weight: 600;
+            color: $primary;
+        }
+    }
+}

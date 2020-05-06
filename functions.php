@@ -205,6 +205,7 @@ function wp_bootstrap_starter_scripts() {
     }
     //custom style (from scss)
     wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/inc/assets/scss/style.css' );
+    wp_enqueue_style( 'swiper-style', get_stylesheet_directory_uri() . '/inc/assets/css/swiper.min.css' );
 
     //Color Scheme
     /*if(get_theme_mod( 'preset_color_scheme_setting' ) && get_theme_mod( 'preset_color_scheme_setting' ) !== 'default') {
@@ -235,6 +236,7 @@ function wp_bootstrap_starter_scripts() {
     }
     //custom style (from scss)
     wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/inc/assets/js/script.js' , array( 'jquery' ) );
+    wp_enqueue_script( 'swiper-scripts', get_stylesheet_directory_uri() . '/inc/assets/js/swiper.min.js' );
 
 
 }

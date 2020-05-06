@@ -12,6 +12,7 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/home-jak-wyglada');?>
 <?php get_template_part( 'template-parts/home-formularz');?>
 <?php get_template_part( 'template-parts/home-faq');?>
+<?php get_template_part( 'template-parts/home-referencje');?>
 
 
 <p style="margin-top:100px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae nesciunt eaque magni
