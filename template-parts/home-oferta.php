@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="home-oferta__card">
                     <img src="/wp-content/uploads/2020/04/crash.svg" alt="">
                     <p class="before-title">Odszkodowanie za</p>
@@ -34,7 +34,7 @@
                     <a href="#" class="btn-cta">zgłoś wypadek</a>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="home-oferta__card active">
                     <img src="/wp-content/uploads/2020/04/crash.svg" alt="">
                     <p class="before-title">Odszkodowanie za</p>
@@ -54,7 +54,7 @@
                     <a href="#" class="btn-cta">zgłoś wypadek</a>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="home-oferta__card">
                     <img src="/wp-content/uploads/2020/04/crash.svg" alt="">
                     <p class="before-title">Odszkodowanie za</p>
@@ -74,7 +74,7 @@
                     <a href="#" class="btn-cta">zgłoś wypadek</a>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="home-oferta__card">
                     <img src="/wp-content/uploads/2020/04/crash.svg" alt="">
                     <p class="before-title">Odszkodowanie za</p>

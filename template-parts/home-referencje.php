@@ -105,10 +105,16 @@
         <!-- Initialize Swiper -->
         <script>
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
             centeredSlides: true,
+            breakpoints: {
+                560: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+            }
         });
         </script>
     </div>

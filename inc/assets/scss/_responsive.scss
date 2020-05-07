@@ -9,16 +9,64 @@
             }
         }
     }
-}
 
-@media (max-width: 576px) {
-    .dlaczego-kafle {
-        .dlaczego-kafel {
-            width: 100%;
-            padding: .5em;
+    .home-jak-wyglada .dlaczego-kafle.jak-wyglada .dlaczego-kafel:first-child {
+        width: 100%;
+    }
 
-            &:first-child {
+    @media (max-width: 991px) {
+        .home-formularz .formularz {
+
+            display: block;
+            margin-top: 3em;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .home-cta {
+            p {
+                text-align: center;
+            }
+
+            a {
+                float: unset;
+                margin-top: 1em;
+            }
+        }
+
+        footer {
+            text-align: center;
+
+            .footer-kontakt ul li {
+                position: relative;
+                margin-bottom: 10px;
+                max-width: 240px;
+                text-align: left;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .copyright p {
+                margin: 1em 0;
+                text-align: center;
+            }
+        }
+
+        .home-oferta .home-oferta__card {
+            display: block;
+            margin: 2em 0;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .dlaczego-kafle {
+            .dlaczego-kafel {
                 width: 100%;
+                padding: .5em;
+
+                &:first-child {
+                    width: 100%;
+                }
             }
         }
     }

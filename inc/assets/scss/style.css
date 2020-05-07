@@ -242,6 +242,74 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
   height: 42px;
 }
 
+footer {
+  background: #002E5B;
+  color: #fff;
+}
+
+footer h3 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+footer p {
+  font-size: .9em;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer ul li a {
+  color: #fff;
+  font-weight: 400;
+  font-size: .9em;
+  margin: 1em 0;
+  display: block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer ul li a:hover {
+  color: #DD4A00;
+}
+
+footer img {
+  max-width: 260px;
+  padding: 5px 5px 5px 0px;
+  width: 100%;
+}
+
+footer .footer-kontakt ul li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+footer .footer-kontakt ul li img {
+  width: 45px;
+  position: absolute;
+}
+
+footer .footer-kontakt ul li p {
+  color: #fff;
+  display: inline-block;
+  padding-left: 60px;
+  min-height: 45px;
+  margin-bottom: 0;
+  line-height: 45px;
+}
+
+footer .copyright {
+  border-top: 1px solid #ffffff38;
+}
+
+footer .copyright p {
+  margin: 1em 0;
+  text-align: left;
+}
+
 .home-banner {
   background: url("/wp-content/uploads/2020/04/AdobeStock_246426078.jpg") no-repeat center center;
   background-size: cover;
@@ -853,6 +921,31 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
   color: #002E5B;
 }
 
+.home-cta {
+  background: #002E5B;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.home-cta p {
+  color: #fff;
+  margin: 10px 0;
+  font-size: 1.3em;
+  font-weight: 600;
+  text-align: left;
+}
+
+.home-cta a {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 30px;
+  border-radius: 2em;
+  font-size: 0.8em;
+  font-weight: 900;
+  float: right;
+  display: inline-block;
+}
+
 @media (max-width: 1200px) {
   .dlaczego-kafle .dlaczego-kafel {
     width: 50%;
@@ -862,9 +955,54 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
   .dlaczego-kafle .dlaczego-kafel:first-child {
     width: 100%;
   }
+
+  .home-jak-wyglada .dlaczego-kafle.jak-wyglada .dlaczego-kafel:first-child {
+    width: 100%;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) and (max-width: 991px) {
+  .home-formularz .formularz {
+    display: block;
+    margin-top: 3em;
+  }
+}
+
+@media (max-width: 1200px) and (max-width: 767px) {
+  .home-cta p {
+    text-align: center;
+  }
+
+  .home-cta a {
+    float: unset;
+    margin-top: 1em;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .footer-kontakt ul li {
+    position: relative;
+    margin-bottom: 10px;
+    max-width: 240px;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer .copyright p {
+    margin: 1em 0;
+    text-align: center;
+  }
+
+  .home-oferta .home-oferta__card {
+    display: block;
+    margin: 2em 0;
+  }
+}
+
+@media (max-width: 1200px) and (max-width: 576px) {
   .dlaczego-kafle .dlaczego-kafel {
     width: 100%;
     padding: .5em;

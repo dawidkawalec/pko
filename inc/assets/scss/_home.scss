@@ -642,3 +642,31 @@
         }
     }
 }
+
+
+.home-cta {
+    background: #002E5B;
+    padding: 2em 0;
+    text-align: center;
+
+    p {
+        color: #fff;
+        margin: 10px 0;
+        font-size: 1.3em;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    a {
+
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 10px 30px;
+        border-radius: 2em;
+        font-size: 0.8em;
+        font-weight: 900;
+        float: right;
+        display: inline-block;
+    }
+
+}
