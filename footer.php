@@ -54,15 +54,15 @@
                             <p style="line-height: 22px;">100A Market Street, Hyde,<br>Manchester SK14 1ES</p>
                         </li>
                         <li>
-                            <img src="/wp-content/uploads/2020/05/chrome_PHdDjGd9uE.png" alt="">
+                            <img src="/wp-content/uploads/2020/05/chrome_528mhJXgG9.png" alt="">
                             <p>0161 7914 669</p>
                         </li>
                         <li>
-                            <img src="/wp-content/uploads/2020/05/chrome_PHdDjGd9uE.png" alt="">
+                            <img src="/wp-content/uploads/2020/05/chrome_eR03OLFMP5.png" alt="">
                             <p>info@polskakancelariaodszkodowan.co.uk</p>
                         </li>
                         <li>
-                            <img src="/wp-content/uploads/2020/05/chrome_PHdDjGd9uE.png" alt="">
+                            <img src="/wp-content/uploads/2020/05/chrome_UuRsCx66C7.png" alt="">
                             <p>PolskaKancelariaOdszkodowanUK</p>
                         </li>
                     </ul>

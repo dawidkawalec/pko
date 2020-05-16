@@ -61,7 +61,14 @@
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                         aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <div id="hamburger" class="nav-bar-toggle open">
+                            <div class="bar top-left"></div>
+                            <div class="bar top-right"></div>
+                            <div class="bar middle-right"></div>
+                            <div class="bar middle-left"></div>
+                            <div class="bar bottom-left"></div>
+                            <div class="bar bottom-right"></div>
+                        </div>
                     </button>
 
                     <?php

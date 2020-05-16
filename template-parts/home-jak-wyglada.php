@@ -19,6 +19,7 @@
                 <div class="dlaczego-kafel-container">
                     <div class="ikona">
                         <img src="/wp-content/uploads/2020/04/law.svg" alt="">
+                        <div class="ikona-numer">1</div>
                     </div>
                     <p>Przyjęcie<br>sprawy
                     </p>
@@ -27,36 +28,40 @@
             <div class="dlaczego-kafel">
                 <div class="dlaczego-kafel-container">
                     <div class="ikona">
-                        <img src="/wp-content/uploads/2020/04/law.svg" alt="">
+                        <img src="/wp-content/uploads/2020/05/002-law.svg" alt="">
+                        <div class="ikona-numer">2</div>
                     </div>
-                    <p>Przyjęcie<br>sprawy
+                    <p>Potwierdzenie<br>winy
                     </p>
                 </div>
             </div>
             <div class="dlaczego-kafel">
                 <div class="dlaczego-kafel-container">
                     <div class="ikona">
-                        <img src="/wp-content/uploads/2020/04/law.svg" alt="">
+                        <img src="/wp-content/uploads/2020/05/003-inheritance.svg" alt="">
+                        <div class="ikona-numer">3</div>
                     </div>
-                    <p>Przyjęcie<br>sprawy
+                    <p>Wycena<br>odszkodowania
                     </p>
                 </div>
             </div>
             <div class="dlaczego-kafel">
                 <div class="dlaczego-kafel-container">
                     <div class="ikona">
-                        <img src="/wp-content/uploads/2020/04/law.svg" alt="">
+                        <img src="/wp-content/uploads/2020/05/004-judge.svg" alt="">
+                        <div class="ikona-numer">4</div>
                     </div>
-                    <p>Przyjęcie<br>sprawy
+                    <p>Negocjacja<br>odszkodowania
                     </p>
                 </div>
             </div>
             <div class="dlaczego-kafel">
                 <div class="dlaczego-kafel-container">
                     <div class="ikona">
-                        <img src="/wp-content/uploads/2020/04/law.svg" alt="">
+                        <img src="/wp-content/uploads/2020/05/005-browser.svg" alt="">
+                        <div class="ikona-numer">5</div>
                     </div>
-                    <p>Przyjęcie<br>sprawy
+                    <p>Przelew<br>odszkodowania
                     </p>
                 </div>
             </div>

@@ -22,7 +22,7 @@ jQuery(function ($) {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
-            if (scroll >= 500) {
+            if (scroll >= 1200) {
                 $("#header-kancelaria").addClass("fixed-top");
                 // $("#header-kancelaria").addClass("top-");
             } else {
@@ -30,6 +30,16 @@ jQuery(function ($) {
             }
         });
 
+        const hamburger = document.querySelector('#hamburger');
+        hamburger.addEventListener('click', () => {
+            if (hamburger.classList.contains('open')) {
+                hamburger.classList.remove('open');
+                hamburger.classList.add('close');
+            } else {
+                hamburger.classList.add('open');
+                hamburger.classList.remove('close');
+            }
+        })
 
 
     });
