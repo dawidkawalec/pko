@@ -1,0 +1,36 @@
+.hero {
+  padding-top: 100px;
+  background: #002e5b;
+}
+
+.hero #breadcrumbs {
+  color: #fff;
+}
+
+.hero #breadcrumbs a {
+  color: #fff;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 800;
+  max-width: 770px;
+}
+
+.hero-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  padding: 4rem 0 3rem 0;
+  color: #444;
+}
+
+.hero-content .section-content h2::after {
+  left: 0;
+}
+
+.wypadek-content {
+  background: #f7f7f7;
+  padding: 4rem 0 3rem 0;
+}
+/*# sourceMappingURL=wypadek.css.map */
