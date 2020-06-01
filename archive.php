@@ -9,20 +9,71 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area col-sm-12 col-lg-8">
-		<main id="main" class="site-main" role="main">
+<div id="blog">
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php
+                if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+                }
+                ?>
+                    <h1><?php echo single_cat_title() ?></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <?php echo category_description() ?>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<?php
-		if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
 
-			<?php
+    <section class="wypadki-loop content">
+        <div class="kategorie-blog">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 text-center">
+                        <a class="kategoria-btn" href="/blog">Wszystkie</a>
+                        <?php
+                $categories = get_categories( array(
+                    'orderby' => 'name',
+                    'order'   => 'ASC'
+                ) );
+
+                foreach( $categories as $category ) {
+                    echo '<div class="kategoria-btn-check"><a class="kategoria-btn" href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';   
+                } ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 text-center">
+                    <div class="row">
+
+                        <?php
+		if ( have_posts() ) :
+
+			if ( is_home() && ! is_front_page() ) : ?>
+
+
+                        <?php
+			endif;
+
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
@@ -31,7 +82,7 @@ get_header(); ?>
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+				get_template_part( 'template-parts/blog-loop', get_post_format() );
 
 			endwhile;
 
@@ -43,9 +94,15 @@ get_header(); ?>
 
 		endif; ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 <?php
-get_sidebar();
 get_footer();

@@ -1,0 +1,116 @@
+#blog {
+    padding-top: 30px;
+
+    .wypadki-loop {
+
+        .wypadek-loop {
+
+            &:last-of-type {
+                margin: 0;
+                height: 100%;
+                margin-bottom: 0;
+            }
+
+            .blog-tagi {
+                a {
+                    background: $cta;
+                    color: #fff;
+                    padding: 6px 18px;
+                    margin-left: 1em;
+                    display: inline-block;
+                    margin-top: 1em;
+                    margin-bottom: -12px;
+                    border: 2px solid $cta;
+                    transition: $all_tr;
+                    font-weight: 600;
+
+                    &:hover {
+                        background: #fff;
+                        color: $cta;
+                    }
+                }
+            }
+        }
+    }
+
+    .blog-content {
+        margin-top: 1.5em;
+        padding: 4em 0;
+        color: #555;
+
+        p {
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 1em;
+
+            li {
+                color: #002E5B;
+                font-weight: 600;
+                margin: .8em 0;
+                font-size: 1.1em;
+
+                &::before {
+                    content: "\2022";
+                    color: #DD4A00;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            }
+        }
+    }
+
+    .kategorie-blog {
+        margin-bottom: 3rem;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: .5rem;
+
+        .kategoria-btn-check {
+            display: inline-block;
+        }
+
+        .kategoria-btn {
+            color: #222;
+            font-size: 1.2em;
+            font-weight: 800;
+            padding: .5em 1em;
+            position: relative;
+            transition: $all_tr;
+
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: calc(-.5rem + 5px);
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: $cta;
+                opacity: 0;
+                transition: $all_tr;
+            }
+
+            &:hover,
+            &.active {
+                color: $cta;
+                text-decoration: none;
+
+                &::after {
+                    opacity: 1;
+                    transition: $all_tr;
+                }
+            }
+        }
+    }
+}
+
+#blog.blog-post {
+    .blog-content {
+        padding-top: 0;
+
+    }
+}

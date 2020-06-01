@@ -415,6 +415,8 @@ header#header-kancelaria {
 footer {
     background: #002E5B;
     color: #fff;
+    position: relative;
+    z-index: 10;
 
     h3 {
         color: #fff;
@@ -486,9 +488,86 @@ footer {
     }
 }
 
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding: 0 0 0 20px;
+
+    li {
+        counter-increment: my-awesome-counter;
+        padding: 10px 0;
+        max-width: 720px;
+
+        &::before {
+            content: counter(my-awesome-counter) ". ";
+            color: $cta;
+            font-weight: 800;
+            position: absolute;
+            left: 15px;
+        }
+    }
+}
+
+.section-content {
+    ul {
+        color: $primary;
+        list-style: none;
+
+        li {
+            padding: 5px 0;
+            position: relative;
+            padding-left: 2em;
+
+            &::before {
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                content: '';
+                border-radius: 50%;
+                background: #DD4A00;
+                left: -20px;
+                top: calc(50% - .25em);
+            }
+        }
+    }
+}
+
+.hero {
+    padding-top: 120px;
+    background: #002e5b;
+    padding-bottom: 30px;
+
+    #breadcrumbs {
+        color: #fff;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 1.75rem;
+        font-weight: 800;
+        max-width: 770px;
+    }
+}
+
+.hero-title {
+    padding-top: 140px;
+}
+
+.hero-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 4rem 0 3rem 0;
+    color: #444;
+}
 
 
 //imports 
 @import "home";
 @import "wypadek";
+@import "blog";
+@import "kontakt";
 @import "responsive";

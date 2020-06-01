@@ -42,6 +42,22 @@ jQuery(function ($) {
         })
 
 
+        //dodanie klasy w kategoriach
+
+        $(function () {
+
+            var url = window.location.href;
+            $('.kategoria-btn-check').each(function () {
+                if ($('a', this).attr('href') == url) {
+                    $('a', this).addClass('active');
+                }
+            });
+            console.log(url);
+
+
+        });
+
+
     });
 
     // Run the script once the window finishes loading

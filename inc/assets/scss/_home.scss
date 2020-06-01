@@ -683,6 +683,8 @@
     background: #002E5B;
     padding: 2em 0;
     text-align: center;
+    position: relative;
+    z-index: 10;
 
     p {
         color: #fff;

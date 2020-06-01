@@ -402,3 +402,77 @@ echo 'Fueled by <a href="http://www.wordpress.org" target="_blank">WordPress</a>
 }
  
 add_filter('admin_footer_text', 'remove_footer_admin');  
+
+//
+// custom wypadki
+//
+function dodanie_wypadkow_dawid() {
+	$labels = array(
+		'name'                => __( 'Wypadki' ),
+		'singular_name'       => __( 'Wypadek'),
+		'menu_name'           => __( 'Wypadek'),
+		'parent_item_colon'   => __( 'Wypadek rodzic'),
+		'all_items'           => __( 'Wszystkie Wypadki'),
+		'view_item'           => __( 'Zobacz Wypadek '),
+		'add_new_item'        => __( 'Nowy Wypadek'),
+		'add_new'             => __( 'Dodaj'),
+		'edit_item'           => __( 'Edytuj Wypadek'),
+		'update_item'         => __( 'Zaktualizuj Wypadek'),
+		'search_items'        => __( 'Poszuaj Wypadek'),
+		'not_found'           => __( 'Nie znaleziono'),
+        'not_found_in_trash'  => __( 'Nie znaleziono w smieciach')
+        
+	);
+	$args = array(
+		'label'               => __( 'Wypadki'),
+		'description'         => __( 'Wszystkie Wypadeki'),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'excerpt', 'author', 'thumbnail', 'revisions'),
+		'public'              => true,
+		'hierarchical'        => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'has_archive'         => true,
+		'can_export'          => true,
+		'exclude_from_search' => false,
+	        'yarpp_support'       => true,
+		'taxonomies' 	      => array('post_tag'),
+		'publicly_queryable'  => true,
+        'capability_type'     => 'page',
+    );
+	register_post_type( 'wypadki', $args );
+}
+add_action( 'init', 'dodanie_wypadkow_dawid', 0 );
+//
+// Wypadki texonomia
+//
+add_action( 'init', 'dodanie_taxonomii_wypadki_dawid', 0 );
+ 
+//create a custom taxonomy name it "type" for your posts
+function dodanie_taxonomii_wypadki_dawid() {
+ 
+  $labels = array(
+    'name' => _x( 'rodzaje_wypadkow', 'taxonomy general name' ),
+    'singular_name' => _x( 'Rodzaj wypadku', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Wyszukaj rodzaje' ),
+    'all_items' => __( 'Wszystkie rodzaje' ),
+    'parent_item' => __( 'Rodziaje rodzic ' ),
+    'parent_item_colon' => __( 'Rodzaj wypadku:' ),
+    'edit_item' => __( 'Eytuj rodzaj' ), 
+    'update_item' => __( 'Zaktualizuj' ),
+    'add_new_item' => __( 'Dodaj nowy rodzaj wypadku' ),
+    'new_item_name' => __( 'Dodaj nowy' ),
+    'menu_name' => __( 'Rodzaje wypadkow' ),
+  ); 	
+ 
+  register_taxonomy('rodzaje_wypadkow',array('wypadki'), array(
+    'hierarchical' => true,
+    'rewrite'  => array( 'slug' => 'rodzaje-wypadkow' ),
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+  ));
+}

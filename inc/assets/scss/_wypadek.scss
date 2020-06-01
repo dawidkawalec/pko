@@ -1,0 +1,229 @@
+.wypadek-content {
+    background: #f7f7f7;
+    padding: 4rem 0 3rem 0;
+
+    .section-content {
+        h2 {
+            &::after {
+                left: 0;
+            }
+        }
+
+        p {
+            .content-bold {
+                font-weight: 800;
+                font-size: 1.2em;
+            }
+        }
+
+        h3 {
+            font-size: 1.6em;
+            font-weight: 800;
+            color: $primary;
+            line-height: 1.4;
+        }
+
+
+    }
+}
+
+.home-o-nas.wypadek {
+    padding: 5rem 0 2rem 0;
+
+    img {
+        left: unset;
+        right: 15px;
+    }
+}
+
+.home-faq.wypadek {
+    background: #f7f7f7;
+
+    #faq_accordion .faq-holder .faq-header {
+        background: #fff;
+    }
+
+    #faq_accordion .faq-body {
+        background: #fff;
+    }
+
+    p {
+        font-size: .9em;
+        color: #6d6d6d;
+    }
+
+    h6 {
+        font-size: 1.1em;
+        font-weight: 800;
+        color: $primary;
+    }
+}
+
+.home-dlaczego-kafle.wypadek {
+    background: url(/wp-content/uploads/2020/04/sean-pollock-PhYq704ffdA-unsplash-1.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 6em 0;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        background-color: #002E5B;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        opacity: 0.90;
+        mix-blend-mode: multiply;
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    .dlaczego-kafle {
+        z-index: 2;
+        position: relative;
+
+        .dlaczego-kafel {
+            width: 33.33%;
+
+            &:first-child {
+                width: 33.33%;
+            }
+        }
+    }
+}
+
+.wypadek-table {
+    .table-responsive {
+        background: #F7F7F7;
+        padding: 1em;
+        padding-bottom: 0;
+
+        .table {
+            background: #fff;
+            margin-bottom: 1em;
+            border: 6px solid #fff;
+
+
+        }
+    }
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f7f7f7;
+}
+
+.wypadki-loop {
+    background: #f7f7f7;
+    padding: 3rem 0 5rem 0;
+
+    .wypadek-loop {
+        background: #fff;
+        padding: 1em;
+        text-align: left;
+        border-top-right-radius: 2em;
+        border-bottom-left-radius: 2em;
+        margin: 2em 0;
+        transition: $all_tr;
+
+        h3 {
+            padding-left: 1em;
+            font-weight: 800;
+        }
+
+        &:last-of-type {
+            margin-bottom: 4em;
+        }
+
+        .wypadek-loop-img {
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: $primary;
+                opacity: 0;
+                z-index: 2;
+                transition: $all_tr;
+            }
+
+            &::after {
+                position: absolute;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                content: '+';
+                top: calc(50% - 48px);
+                font-size: 60px;
+                font-weight: 800;
+                color: #fff;
+                z-index: 4;
+                width: 100%;
+                opacity: 0;
+                transition: $all_tr;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 0 30px #0000001f;
+
+            a {
+                text-decoration: none;
+            }
+
+            h3 {
+                color: $cta;
+            }
+
+            .wypadek-loop-img {
+                &::before {
+                    opacity: 0.7;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    a {
+        &:hover {
+            color: $cta;
+        }
+    }
+}
+
+.home-faq.wypadek-faq {
+    background: #fff;
+
+    h2 {
+        max-width: 560px;
+    }
+
+    #faq_accordion .faq-holder .faq-header h5 a.collapse {
+        padding-left: 25px;
+    }
+}
+
+.home-formularz.wypadek-formularz {
+    position: fixed;
+    top: 140px;
+    left: 60%;
+    width: 30%;
+    max-width: 450px;
+    background: transparent;
+    z-index: 9;
+
+    .formularz {
+        background: #0B4074;
+    }
+}

@@ -6,7 +6,7 @@
 
 ?>
 
-<section class="hero">
+<section class="hero hero-title">
     <div class="container">
         <div class="row">
             <div class="col-md-7">
@@ -15,9 +15,7 @@
                 yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                 }
                 ?>
-                <?php if ( get_field('wypadek_poj_tytul_strony') ) : ?>
-                <h1><?php echo get_field('wypadek_poj_tytul_strony'); ?></h1>
-                <?php endif; ?>
+                <h1><?php the_title() ?></h1>
             </div>
         </div>
     </div>
