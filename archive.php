@@ -45,7 +45,7 @@ get_header(); ?>
                 <div class="row">
 
                     <div class="col-lg-12 text-center">
-                        <a class="kategoria-btn" href="/blog">Wszystkie</a>
+                        <a class="kategoria-btn" href="/blog">Wssszystkie</a>
                         <?php
                 $categories = get_categories( array(
                     'orderby' => 'name',

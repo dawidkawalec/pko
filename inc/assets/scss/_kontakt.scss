@@ -1,8 +1,99 @@
 #kontakt-page {
     .home-formularz {
+        background: #f7f7f7;
+
         .formularz {
             margin-top: -0;
             margin-bottom: -0;
+        }
+    }
+
+    h3 {
+        font-weight: 800;
+        color: #002e5b;
+        font-size: 1.3em;
+        padding-bottom: .5em;
+        position: relative;
+    }
+}
+
+.kontakt-kraj {
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 25px #0000000a;
+    padding: 1.5em;
+    transition: all 0.5s;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+
+    &:hover {
+        box-shadow: 0 0 18px #0000003d;
+    }
+
+    h3 {
+        &::after {
+            position: absolute;
+            content: '';
+            height: 3px;
+            left: 0;
+            right: 70%;
+            background: $primary;
+            bottom: 0;
+        }
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    div {
+        margin: .5em 0;
+        padding-left: 35px;
+        position: relative;
+    }
+
+    .kontakt-godziny {
+        &:before {
+            content: '';
+            position: absolute;
+            left: -4px;
+            width: 30px;
+            height: 30px;
+            background: url('https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/06/godziny.svg');
+            top: -2px;
+        }
+    }
+
+    .kontakt-adres {
+        &:before {
+            content: '';
+            position: absolute;
+            left: -4px;
+            width: 30px;
+            height: 30px;
+            background: url('https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/06/lokalizacja.svg');
+            top: -2px;
+        }
+    }
+
+    .kontakt-mail {
+        a {
+            color: $cta;
+
+            &:hover {
+                color: $cta;
+            }
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -4px;
+            width: 30px;
+            height: 30px;
+            background: url('https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/06/koperta.svg');
+            top: -2px;
         }
     }
 }

@@ -24,7 +24,7 @@ get_header(); ?>
                             <div class="kontakt-kraj">
                                 <h3>Kontakt z Wielkiej Brytanii</h3>
                                 <div class="kontakt-adres">
-                                    <p>100A Market Street, Hyde,
+                                    <p>100A Market Street, Hyde,<br>
                                         Manchester SK14 1ES</p>
                                 </div>
                                 <div class="kontakt-mail">
@@ -32,8 +32,8 @@ get_header(); ?>
                                         href="mailto:info@polskakancelariaodszkodowan.co.uk">info@polskakancelariaodszkodowan.co.uk</a>
                                 </div>
                                 <div class="kontakt-godziny">
-                                    <p>Pn. - Pt.: 8:00-18:00
-                                        Pn. - Pt.: 18:00-20:00 emergency contact
+                                    <p>Pn. - Pt.: 8:00-18:00<br>
+                                        Pn. - Pt.: 18:00-20:00 emergency contact<br>
                                         Sob.: 10:00-18:00 emergency contact</p>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@ get_header(); ?>
                             <div class="kontakt-kraj">
                                 <h3>Kontakt z Polski</h3>
                                 <div class="kontakt-adres">
-                                    <p>100A Market Street, Hyde,
+                                    <p>100A Market Street, Hyde,<br>
                                         Manchester SK14 1ES</p>
                                 </div>
                                 <div class="kontakt-mail">
@@ -50,15 +50,15 @@ get_header(); ?>
                                         href="mailto:info@polskakancelariaodszkodowan.co.uk">info@polskakancelariaodszkodowan.co.uk</a>
                                 </div>
                                 <div class="kontakt-godziny">
-                                    <p>Pn. - Pt.: 8:00-18:00
-                                        Pn. - Pt.: 18:00-20:00 emergency contact
+                                    <p>Pn. - Pt.: 8:00-18:00<br>
+                                        Pn. - Pt.: 18:00-20:00 emergency contact<br>
                                         Sob.: 10:00-18:00 emergency contact</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <h2>Akceptujemy kontakt poprzez:</h2>
+                    <h2 style="margin-top: 1em;">Akceptujemy kontakt poprzez:</h2>
                     <p>Facebook, Whats App, Czat, E-mail, Telefon</p>
                     <h3>JESTEŚMY NOWOCZEŚNI TECHNOLOGICZNIE: </h3>
                     <p>Wychodząc naprzeciw oczekiwaniom naszych klientów używamy

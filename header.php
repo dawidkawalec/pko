@@ -53,12 +53,12 @@
         <header id="header-kancelaria" class="site-header navbar-static-top" role="banner">
             <div class="container">
                 <nav class="navbar navbar-expand-xl header-nav">
-
-                    <div id="header-logo">
-                        <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/logo-pko.png"
-                            alt="">
-                    </div>
-
+                    <a href="<?php echo get_site_url(); ?>">
+                        <div id="header-logo">
+                            <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/logo-pko.png"
+                                alt="">
+                        </div>
+                    </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                         aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                         <div id="hamburger" class="nav-bar-toggle open">

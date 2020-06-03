@@ -476,3 +476,92 @@ function dodanie_taxonomii_wypadki_dawid() {
     'query_var' => true,
   ));
 }
+
+
+
+//
+// custom FAQ
+//
+function dodanie_faq_dawid() {
+	$labels = array(
+		'name'                => __( 'FAQ pytania' ),
+		'singular_name'       => __( 'FAQ pytania'),
+		'menu_name'           => __( 'FAQ pytania'),
+		'parent_item_colon'   => __( 'FAQ pytania rodzic'),
+		'all_items'           => __( 'Wszystkie FAQ pytania'),
+		'view_item'           => __( 'Zobacz FAQ pytania'),
+		'add_new_item'        => __( 'Nowy FAQ pytania'),
+		'add_new'             => __( 'Dodaj'),
+		'edit_item'           => __( 'Edytuj FAQ pytania'),
+		'update_item'         => __( 'Zaktualizuj FAQ pytania'),
+		'search_items'        => __( 'Poszuaj FAQ pytania'),
+		'not_found'           => __( 'Nie znaleziono'),
+        'not_found_in_trash'  => __( 'Nie znaleziono w smieciach')
+        
+	);
+	$args = array(
+		'label'               => __( 'FAQ pytania'),
+		'description'         => __( 'Wszystkie FAQ pytania'),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions'),
+		'public'              => true,
+		'hierarchical'        => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'has_archive'         => true,
+		'can_export'          => true,
+		'exclude_from_search' => false,
+	        'yarpp_support'       => true,
+		'taxonomies' 	      => array('post_tag'),
+		'publicly_queryable'  => true,
+        'capability_type'     => 'page',
+    );
+	register_post_type( 'faq-pytania', $args );
+}
+add_action( 'init', 'dodanie_faq_dawid', 0 );
+//
+// FAQ texonomia
+//
+add_action( 'init', 'dodanie_taxonomii_faq_dawid', 0 );
+ 
+//create a custom taxonomy name it "type" for your posts
+function dodanie_taxonomii_faq_dawid() {
+ 
+  $labels = array(
+    'name' => _x( 'rodzaje_faq', 'taxonomy general name' ),
+    'singular_name' => _x( 'Rodzaj FAQ', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Wyszukaj rodzaje' ),
+    'all_items' => __( 'Wszystkie rodzaje' ),
+    'parent_item' => __( 'Rodziaje rodzic ' ),
+    'parent_item_colon' => __( 'Rodzaj FAQ:' ),
+    'edit_item' => __( 'Eytuj rodzaj' ), 
+    'update_item' => __( 'Zaktualizuj' ),
+    'add_new_item' => __( 'Dodaj nowy rodzaj FAQ' ),
+    'new_item_name' => __( 'Dodaj nowy' ),
+    'menu_name' => __( 'Rodzaje FAQ' ),
+  ); 	
+ 
+  register_taxonomy('rodzaje_faq',array('faq-pytania'), array(
+    'hierarchical' => true,
+    'rewrite'  => array( 'slug' => 'faq-rodzaje' ),
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+  ));
+}
+
+
+
+// Custom function to return the post slug
+function the_slug($echo=true){
+  $slug = basename(get_permalink());
+  do_action('before_slug', $slug);
+  $slug = apply_filters('slug_filter', $slug);
+  if( $echo ) echo $slug;
+  do_action('after_slug', $slug);
+  return $slug;
+}
+ if (function_exists('the_slug')) { the_slug(); } 
