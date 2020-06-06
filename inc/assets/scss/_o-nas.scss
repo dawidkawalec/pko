@@ -1,0 +1,52 @@
+#o-nas {
+    .home-o-nas-content {
+        h3 {
+            color: $primary;
+            font-weight: 800;
+            position: relative;
+            display: inline-block;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                bottom: -6px;
+                left: 0;
+                height: 3px;
+                background: $cta;
+            }
+        }
+    }
+
+    .home-o-nas-content-cala-szerokosc {
+        margin-top: -3em;
+        padding-top: 0;
+    }
+
+    .team {
+        padding-bottom: 0;
+
+        .team-content {
+            h3 {
+                color: $primary;
+                font-weight: 800;
+                position: relative;
+                display: inline-block;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 50%;
+                    bottom: -6px;
+                    left: 0;
+                    height: 3px;
+                    background: $cta;
+                }
+            }
+        }
+
+        .wypadek-loop-img {
+            height: 220px !important;
+        }
+    }
+}

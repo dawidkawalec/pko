@@ -5,8 +5,6 @@
  */
 
 ?>
-
-
 <?php if ( get_field('wypadek_poj_opis_pod_tytulem') ) : ?>
 <section class="hero-content">
     <div class="container">

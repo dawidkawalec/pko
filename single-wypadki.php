@@ -15,6 +15,42 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/wypadek-content');?>
 
+<section class="wypadki-loop content">
+    <div class="container">
+        <div class="row section-content">
+            <div class="col-lg-7 text-center">
+                <h2>Wypadki w pracy UK</h2>
+                <div class="row">
+
+                    <?php 
+                        query_posts(array( 
+                            'post_type' => 'wypadki',
+                        ) );  
+                        ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                    <div class="col-md-4">
+                        <div class="wypadek-loop">
+                            <a href="#">
+                                <div class="wypadek-loop-img"
+                                    style="background:url('<?php the_post_thumbnail_url() ?>'); background-size:cover;border-top-right-radius: 1.5em; border-bottom-left-radius: 1.5em; height: 160px;">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <h3><?php the_title() ?></h3>
+                            </a>
+                        </div>
+                    </div>
+                    <?php endwhile;
+                    wp_reset_query(); 
+                    ?>
+                </div>
+                <a href="/wypadki/" class="btn-cta text-center">Zobacz więcej</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <?php get_template_part( 'template-parts/wypadek-faq');?>
 
 <section>

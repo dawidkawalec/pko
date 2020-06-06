@@ -30,6 +30,10 @@ body {
   text-decoration: none;
 }
 
+.white-bg {
+  background: #fff !important;
+}
+
 .section-content .before-title {
   color: #98B5C5;
   text-transform: uppercase;
@@ -1687,6 +1691,53 @@ ol li::before {
   height: 30px;
   background: url("https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/06/koperta.svg");
   top: -2px;
+}
+
+#o-nas .home-o-nas-content h3 {
+  color: #002E5B;
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+}
+
+#o-nas .home-o-nas-content h3::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: -6px;
+  left: 0;
+  height: 3px;
+  background: #DD4A00;
+}
+
+#o-nas .home-o-nas-content-cala-szerokosc {
+  margin-top: -3em;
+  padding-top: 0;
+}
+
+#o-nas .team {
+  padding-bottom: 0;
+}
+
+#o-nas .team .team-content h3 {
+  color: #002E5B;
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+}
+
+#o-nas .team .team-content h3::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  bottom: -6px;
+  left: 0;
+  height: 3px;
+  background: #DD4A00;
+}
+
+#o-nas .team .wypadek-loop-img {
+  height: 220px !important;
 }
 
 @media (max-width: 1200px) {

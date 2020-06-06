@@ -37,6 +37,10 @@ body {
     }
 }
 
+.white-bg {
+    background: #fff !important;
+}
+
 .section-content {
     .before-title {
         color: #98B5C5;
@@ -571,4 +575,5 @@ ol {
 @import "wypadek";
 @import "blog";
 @import "kontakt";
+@import "o-nas";
 @import "responsive";
