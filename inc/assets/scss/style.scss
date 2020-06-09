@@ -21,6 +21,16 @@ body {
     background-color: #F7F7F7;
 }
 
+.m-tb-15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.m-tb-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .btn-cta {
     background: $cta;
     border: 2px solid $cta;
@@ -139,7 +149,6 @@ header#header-kancelaria {
     right: 0;
     top: 55px;
     left: 0;
-    transition: all 1s;
     z-index: 999;
 
 
@@ -314,7 +323,6 @@ header#header-kancelaria {
 #header-kancelaria.fixed-top {
     position: fixed;
     top: 0;
-    transition: all 1s;
 }
 
 #before-header {
@@ -569,6 +577,23 @@ ol {
     color: #444;
 }
 
+// pojedyncze style
+#opinie .team .team-content h3 {
+    color: #002E5B;
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        bottom: -6px;
+        left: 0;
+        height: 3px;
+        background: #DD4A00;
+    }
+}
 
 //imports 
 @import "home";

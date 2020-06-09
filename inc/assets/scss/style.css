@@ -13,6 +13,16 @@ body {
   background-color: #F7F7F7;
 }
 
+.m-tb-15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.m-tb-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .btn-cta {
   background: #DD4A00;
   border: 2px solid #DD4A00;
@@ -138,8 +148,6 @@ header#header-kancelaria {
   right: 0;
   top: 55px;
   left: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
   z-index: 999;
   /* hamburger */
   /* -- toggle open */
@@ -311,8 +319,6 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
 #header-kancelaria.fixed-top {
   position: fixed;
   top: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 #before-header {
@@ -563,6 +569,23 @@ ol li::before {
   line-height: 1.8;
   padding: 4rem 0 3rem 0;
   color: #444;
+}
+
+#opinie .team .team-content h3 {
+  color: #002E5B;
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+}
+
+#opinie .team .team-content h3::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  bottom: -6px;
+  left: 0;
+  height: 3px;
+  background: #DD4A00;
 }
 
 .home-banner {
