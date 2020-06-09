@@ -469,7 +469,7 @@ function dodanie_taxonomii_wypadki_dawid() {
  
   register_taxonomy('rodzaje_wypadkow',array('wypadki'), array(
     'hierarchical' => true,
-    'rewrite'  => array( 'slug' => 'rodzaje-wypadkow' ),
+    'rewrite'  => array( 'slug' => '/', 'with_front' => false ),
     'labels' => $labels,
     'show_ui' => true,
     'show_admin_column' => true,
