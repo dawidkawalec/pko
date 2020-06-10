@@ -5,6 +5,17 @@ jQuery(function ($) {
     // Run the script once the document is ready
     $(document).ready(function () {
 
+        $('#porady a[href*="#"]').on('click', function (e) {
+            e.preventDefault()
+
+            $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top - 140,
+                },
+                500,
+                'linear'
+            )
+        })
+
 
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();

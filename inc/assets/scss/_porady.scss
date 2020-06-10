@@ -1,0 +1,136 @@
+#porady {
+    .porady-intro {
+        padding: 4em 0;
+    }
+
+    .porady-boxy {
+        padding: 4em 0;
+
+        a {
+            color: $primary;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            .porady-boxy-box {
+                box-shadow: 0 0 20px #00000017;
+                padding: 2em 1em;
+                border-top-right-radius: 2em;
+                border-bottom-left-radius: 2em;
+                transition: $all_tr;
+
+                p {
+                    margin-bottom: 0;
+                    color: $primary;
+                }
+
+                h3 {
+                    color: $primary;
+                    font-weight: 800;
+                }
+
+                &:hover {
+                    background: $primary;
+
+                    p {
+                        color: #fff;
+                    }
+
+                    h3 {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .porady-lista {
+        padding: 4em 0;
+
+        .porady-lista-poj {
+            background: #fff;
+            padding: 2em;
+            position: relative;
+            margin: 2em 0;
+
+            img {
+                position: absolute;
+                top: 2em;
+                left: 2em;
+                width: 65px;
+            }
+
+            .porady-lista-poj-content {
+                padding-left: 100px;
+
+                h3 {
+                    font-weight: 800;
+                    color: #002e5b;
+                    margin-top: 0;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        bottom: -10px;
+                        width: 100px;
+                        left: 0;
+                        height: 3px;
+                        background: $cta;
+                    }
+                }
+
+                p {
+                    font-weight: 600;
+                    line-height: 1.5;
+                    color: #999;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+
+    label {
+        width: 100%;
+        text-align: left;
+        color: $primary;
+        font-weight: 800;
+        font-size: 1.1em;
+
+        input,
+        textarea {
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            border-bottom: 3px solid $primary;
+            padding: 0;
+            margin-bottom: 1em;
+            color: $primary;
+
+            &:focus {
+                color: $primary;
+                background-color: transparent;
+                border-color: $cta;
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+
+
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background: #002e5b;
+        border: 0;
+        border-radius: 2em;
+        padding: 1em;
+        font-weight: 800;
+        transition: $all_tr;
+
+        &:hover {
+            background: $cta;
+        }
+    }
+}

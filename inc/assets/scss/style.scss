@@ -47,6 +47,115 @@ body {
     }
 }
 
+.cta {
+    background: #DD4A00;
+    border: 2px solid #DD4A00;
+    border-radius: 2em;
+    color: #fff;
+    padding: 10px 30px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    width: 250px;
+    margin: -6px auto 0 auto;
+    font: 600;
+    transition: $all_tr;
+
+    &:hover {
+        text-decoration: none;
+        background: #fff;
+        color: $cta;
+    }
+}
+
+.comment-list {
+    a {
+        color: #fff;
+    }
+
+    .card-header {
+        border-bottom: 1px solid $primary;
+        background: $primary;
+
+        .says {
+            display: none;
+        }
+    }
+
+    .card-footer {
+        background: #fff;
+    }
+
+    .media-body-wrap {
+        border: 2px solid #002e5b;
+        border-radius: 0;
+    }
+
+    a.comment-reply-link {
+        color: #fff;
+        background: $primary;
+        border: 0;
+        border-radius: 2em;
+        padding: 10px 40px;
+        float: right;
+        transition: $all_tr;
+
+        &:hover {
+            background: $cta;
+        }
+    }
+}
+
+#respond {
+    border: 2px solid #002e5b;
+    padding: 2em 2em 4em 2em;
+    margin-bottom: 2em;
+
+    a {
+        color: $cta;
+    }
+
+    textarea {
+        border: 2px solid $primary;
+        border-radius: 0;
+        transition: $all_tr;
+
+        &:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: $cta;
+            outline: 0;
+            box-shadow: none
+        }
+    }
+
+    .alert-info {
+        color: #b7c4d2;
+        background-color: #002e5b;
+        border-color: #002e5b;
+        border-radius: 0;
+    }
+
+    #commentsubmit {
+        color: #fff;
+        background: $cta;
+        border: 2px solid $cta;
+        border-radius: 2em;
+        padding: 10px 40px;
+        float: right;
+        transition: all 0.5s;
+        width: 100%;
+        transition: $all_tr;
+
+        &:focus,
+        &:hover {
+            box-shadow: none;
+            background: #fff;
+            color: $cta;
+        }
+    }
+}
+
+
 .white-bg {
     background: #fff !important;
 }
@@ -601,4 +710,5 @@ ol {
 @import "blog";
 @import "kontakt";
 @import "o-nas";
+@import "porady";
 @import "responsive";

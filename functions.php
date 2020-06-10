@@ -554,6 +554,88 @@ function dodanie_taxonomii_faq_dawid() {
 }
 
 
+//
+//
+// Pytania forum
+//
+//
+
+
+//
+// custom Pytania forum
+//
+function dodanie_forum_dawid() {
+	$labels = array(
+		'name'                => __( 'Forum pytania' ),
+		'singular_name'       => __( 'Forum pytania'),
+		'menu_name'           => __( 'Forum pytania'),
+		'parent_item_colon'   => __( 'Forum pytania rodzic'),
+		'all_items'           => __( 'Wszystkie Forum pytania'),
+		'view_item'           => __( 'Zobacz Forum pytania'),
+		'add_new_item'        => __( 'Nowy Forum pytania'),
+		'add_new'             => __( 'Dodaj'),
+		'edit_item'           => __( 'Edytuj Forum pytania'),
+		'update_item'         => __( 'Zaktualizuj Forum pytania'),
+		'search_items'        => __( 'Poszuaj Forum pytania'),
+		'not_found'           => __( 'Nie znaleziono'),
+        'not_found_in_trash'  => __( 'Nie znaleziono w smieciach')
+        
+	);
+	$args = array(
+		'label'               => __( 'Forum pytania'),
+		'description'         => __( 'Wszystkie Forum pytania'),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions'),
+		'public'              => true,
+		'hierarchical'        => false,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'has_archive'         => true,
+		'can_export'          => true,
+		'exclude_from_search' => false,
+	        'yarpp_support'       => true,
+		'taxonomies' 	      => array('post_tag'),
+		'publicly_queryable'  => true,
+        'capability_type'     => 'page',
+    );
+	register_post_type( 'porady', $args );
+}
+add_action( 'init', 'dodanie_forum_dawid', 0 );
+//
+// FAQ texonomia
+//
+add_action( 'init', 'dodanie_taxonomii_forum_dawid', 0 );
+ 
+//create a custom taxonomy name it "type" for your posts
+function dodanie_taxonomii_forum_dawid() {
+ 
+  $labels = array(
+    'name' => _x( 'rodzaje_forum_pytania', 'taxonomy general name' ),
+    'singular_name' => _x( 'Rodzaj Forum', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Wyszukaj rodzaje' ),
+    'all_items' => __( 'Wszystkie rodzaje' ),
+    'parent_item' => __( 'Rodziaje rodzic ' ),
+    'parent_item_colon' => __( 'Rodzaj Forum:' ),
+    'edit_item' => __( 'Eytuj rodzaj' ), 
+    'update_item' => __( 'Zaktualizuj' ),
+    'add_new_item' => __( 'Dodaj nowy rodzaj Forum' ),
+    'new_item_name' => __( 'Dodaj nowy' ),
+    'menu_name' => __( 'Rodzaje Forum' ),
+  ); 	
+ 
+  register_taxonomy('rodzaje_forum_pytania',array('porady'), array(
+    'hierarchical' => true,
+    'rewrite'  => array( 'slug' => 'forum-rodzaje' ),
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+  ));
+}
+
+
 
 // Custom function to return the post slug
 function the_slug($echo=true){
