@@ -1,7 +1,26 @@
 #rodzaje-wypadkow {
     .home-oferta__card {
+        background: #fff;
+        padding: 2em 1.5em;
+        border-top-right-radius: 3em;
+        border-bottom-left-radius: 3em;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        height: calc(100% - 30px);
+
         &:hover {
-            padding-bottom: 3em;
+            background: #fff;
+            padding: 2em 1.5em;
+            border-top-right-radius: 3em;
+            border-bottom-left-radius: 3em;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            height: calc(100% - 30px);
+        }
+
+        .before-title {
+            font-size: .7em;
+            margin: 1.5em 0 .5em 0;
         }
     }
 }

@@ -8,9 +8,14 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/hero-title');?>
 <div id="faq">
 
+
     <section class="faq wypadki-loop content">
         <div class="container">
             <div class="row section-content">
+
+                <div class="col-lg-12">
+                    <?php the_content() ?>
+                </div>
                 <?php if ( have_rows('faq_faq_blok') ) : ?>
 
                 <?php while( have_rows('faq_faq_blok') ) : the_row(); ?>

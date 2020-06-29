@@ -32,7 +32,10 @@ $query = new WP_Query( array(
     'tax_query' => array(
         array(
             'taxonomy' => 'rodzaje_faq',   // taxonomy name
-            'terms' => $testd,                  // term id, term slug or term name
+            'terms' => $testd,  // term id, term slug or term name
+            'post_status' => 'publish',
+    'orderby' => 'publish_date',
+    'order' => 'ASC',              
         )
     )
 ) );
@@ -66,7 +69,8 @@ while ( $query->have_posts() ) : $query->the_post();
                                 itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                                 <div class="faq-body" itemprop="text">
                                     <?php the_content(); ?>
-                                    <?php echo $slug; ?></div>
+                                    <!--  <?php echo $slug; ?>-->
+                                </div>
                             </div>
                         </div>
 

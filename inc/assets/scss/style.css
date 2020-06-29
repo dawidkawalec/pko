@@ -272,14 +272,14 @@ header#header-kancelaria .navbar {
 
 header#header-kancelaria .navbar #header-logo img {
   position: absolute;
-  top: -75px;
-  left: 0;
-  height: 130px;
+  top: -60px;
+  left: 4px;
+  height: 100px;
 }
 
 header#header-kancelaria .navbar #header-logo.header-logo-fixed img {
-  top: -30px;
-  height: 90px;
+  top: -20px;
+  height: 75px;
 }
 
 header#header-kancelaria .navbar li {
@@ -413,7 +413,7 @@ header#header-kancelaria .navbar-nav .menu-cta a {
   padding: 10px 30px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  width: 250px;
+  max-width: 250px;
   margin: -6px auto 0 auto;
 }
 
@@ -448,32 +448,69 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
   justify-content: flex-end;
 }
 
-#before-header .before-header-wrapper .hedaer-kontakt {
-  padding: 10px 30px 10px 35px;
+#before-header .before-header-wrapper .hedaer-kontakt-wrapper {
   position: relative;
+  width: 170px;
+  background: #fff;
+  height: 60px;
+  z-index: 9999;
+  overflow: hidden;
+  padding: 0 1em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-#before-header .before-header-wrapper .hedaer-kontakt .thin {
+#before-header .before-header-wrapper .hedaer-kontakt-wrapper:hover {
+  height: 160px;
+  border-bottom: 3px solid #DD4A00;
+}
+
+#before-header .before-header-wrapper .hedaer-kontakt-wrapper .hedaer-kontakt {
+  padding: 10px 30px 10px 35px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#before-header .before-header-wrapper .hedaer-kontakt-wrapper .hedaer-kontakt a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#before-header .before-header-wrapper .hedaer-kontakt-wrapper .hedaer-kontakt:hover {
+  background: #F7F7F7;
+  -webkit-box-shadow: 0 0 20px #00000036;
+  box-shadow: 0 0 20px #00000036;
+}
+
+#before-header .before-header-wrapper .hedaer-kontakt-wrapper .hedaer-kontakt .thin {
   font-weight: 400;
 }
 
-#before-header .before-header-wrapper .hedaer-kontakt .big {
+#before-header .before-header-wrapper .hedaer-kontakt-wrapper .hedaer-kontakt .big {
   font-weight: 800;
 }
 
-#before-header .before-header-wrapper .hedaer-kontakt p {
+#before-header .before-header-wrapper .hedaer-kontakt-wrapper .hedaer-kontakt p {
   margin-bottom: 0;
   font-size: 13px;
 }
 
-#before-header .before-header-wrapper .hedaer-kontakt::before {
+#before-header .before-header-wrapper .hedaer-kontakt-wrapper .hedaer-kontakt::before {
   content: url("https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/phone.svg");
   position: absolute;
-  left: 0;
+  left: 6px;
   top: 20px;
 }
 
-#before-header .before-header-wrapper .hedaer-kontakt::after {
+#before-header .before-header-wrapper .hedaer-kontakt-wrapper .hedaer-kontakt::after {
   content: '';
   position: absolute;
   width: 10px;
@@ -481,9 +518,17 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
   border-top: 2px solid #002e5b;
   border-left: 2px solid #002e5b;
   top: 22px;
-  right: 0;
+  right: 6px;
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+
+#before-header .before-header-wrapper .hedaer-kontakt-wrapper .hedaer-kontakt:nth-child(2) {
+  top: 50px;
+}
+
+#before-header .before-header-wrapper .hedaer-kontakt-wrapper .hedaer-kontakt:nth-child(3) {
+  top: 100px;
 }
 
 #before-header .before-header-wrapper .hedaer-godziny {
@@ -522,7 +567,7 @@ header#header-kancelaria .navbar-nav .menu-cta a:hover {
 }
 
 #before-header .before-header-wrapper .header-fb {
-  padding: 6px 25px 0 25px;
+  padding: 16px 25px 0 25px;
 }
 
 #before-header .before-header-wrapper .header-fb img {
@@ -2012,6 +2057,118 @@ ol li::before {
   background: #DD4A00;
 }
 
+#rodzaje-wypadkow .home-oferta__card {
+  background: #fff;
+  padding: 2em 1.5em;
+  border-top-right-radius: 3em;
+  border-bottom-left-radius: 3em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: calc(100% - 30px);
+}
+
+#rodzaje-wypadkow .home-oferta__card:hover {
+  background: #fff;
+  padding: 2em 1.5em;
+  border-top-right-radius: 3em;
+  border-bottom-left-radius: 3em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: calc(100% - 30px);
+}
+
+#rodzaje-wypadkow .home-oferta__card .before-title {
+  font-size: .7em;
+  margin: 1.5em 0 .5em 0;
+}
+
+@media (min-width: 1200px) {
+  .megamenu_d {
+    position: inherit;
+  }
+
+  .megamenu_d .dropdown-item {
+    font-weight: 800;
+  }
+
+  .megamenu_d ul {
+    left: 0;
+    right: 0;
+    margin: 0 !important;
+    float: left !important;
+    top: 68px;
+    border: 0;
+    border-radius: 0;
+    padding: .4em;
+    padding-bottom: 1.5em;
+    -webkit-box-shadow: 0px 18px 20px #00000014;
+    box-shadow: 0px 18px 20px #00000014;
+    border-bottom: 5px solid #002e5b;
+  }
+
+  .megamenu_d ul li a {
+    position: relative;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 1em;
+    color: #002E5B;
+  }
+
+  .megamenu_d ul li a::after {
+    display: none !important;
+  }
+
+  .megamenu_d ul li a::before {
+    position: absolute;
+    bottom: 0px;
+    content: '';
+    height: 3px;
+    left: 10px;
+    width: 50%;
+    background: #dd4a00;
+  }
+
+  .megamenu_d li {
+    display: inline-block;
+    width: 24.75%;
+    margin: 0 !important;
+  }
+
+  .megamenu_d li ul.dropdown-menu {
+    position: relative !important;
+    display: inline-block !important;
+    left: 0 !important;
+    padding-bottom: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 0;
+  }
+
+  .megamenu_d li ul.dropdown-menu li {
+    display: block;
+    width: 100%;
+  }
+
+  .megamenu_d li ul.dropdown-menu li a {
+    border-bottom: 0;
+    padding-left: 25px;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+
+  .megamenu_d li ul.dropdown-menu li a::before {
+    display: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    left: 11px;
+    top: 14px;
+    border-radius: 50%;
+    background: #DD4A00;
+  }
+}
+
 @media (max-width: 1200px) {
   .dlaczego-kafle .dlaczego-kafel {
     width: 50%;
@@ -2025,9 +2182,41 @@ ol li::before {
   .home-jak-wyglada .dlaczego-kafle.jak-wyglada .dlaczego-kafel:first-child {
     width: 100%;
   }
+
+  #main-nav.mobile-hide {
+    position: absolute;
+    background: #fff;
+    top: 57px;
+    left: 0;
+    right: 100%;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  #main-nav.mobile-show {
+    right: -20%;
+    position: absolute;
+    background: #fff;
+    top: 57px;
+    left: -20%;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  header#header-kancelaria .navbar-nav .menu-cta a {
+    margin-left: 0;
+    margin-top: .5em;
+    text-align: center;
+  }
 }
 
-@media (max-width: 1200px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .home-formularz .formularz {
     display: block;
     margin-top: 3em;
@@ -2038,7 +2227,7 @@ ol li::before {
   }
 }
 
-@media (max-width: 1200px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .home-cta p {
     text-align: center;
   }
@@ -2072,7 +2261,7 @@ ol li::before {
   }
 }
 
-@media (max-width: 1200px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .dlaczego-kafle .dlaczego-kafel {
     width: 100%;
     padding: .5em;

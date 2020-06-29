@@ -268,16 +268,16 @@ header#header-kancelaria {
         #header-logo {
             img {
                 position: absolute;
-                top: -75px;
-                left: 0;
-                height: 130px;
+                top: -60px;
+                left: 4px;
+                height: 100px;
             }
         }
 
         #header-logo.header-logo-fixed {
             img {
-                top: -30px;
-                height: 90px;
+                top: -20px;
+                height: 75px;
             }
         }
 
@@ -413,7 +413,7 @@ header#header-kancelaria {
             color: #fff;
             padding: 10px 30px;
             transition: $all_tr;
-            width: 250px;
+            max-width: 250px;
             margin: -6px auto 0 auto;
 
             &:hover {
@@ -443,41 +443,87 @@ header#header-kancelaria {
         flex-wrap: wrap;
         justify-content: flex-end;
 
-        .hedaer-kontakt {
-            padding: 10px 30px 10px 35px;
+        .hedaer-kontakt-wrapper {
             position: relative;
+            width: 170px;
+            background: #fff;
+            height: 60px;
+            z-index: 9999;
+            overflow: hidden;
+            padding: 0 1em;
+            transition: $all_tr;
+            cursor: pointer;
 
-            .thin {
-                font-weight: 400;
+            &:hover {
+                height: 160px;
+                border-bottom: 3px solid $cta;
             }
 
-            .big {
-                font-weight: 800;
-            }
 
-            p {
-                margin-bottom: 0;
-                font-size: 13px;
-            }
 
-            &::before {
-                content: url('https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/phone.svg');
+            .hedaer-kontakt {
+                padding: 10px 30px 10px 35px;
                 position: absolute;
-                left: 0;
-                top: 20px;
-            }
-
-            &::after {
-                content: '';
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                border-top: 2px solid #002e5b;
-                border-left: 2px solid #002e5b;
-                top: 22px;
                 right: 0;
-                transform: rotate(-135deg);
+                width: 100%;
+                z-index: 9999;
+                transition: $all_tr;
+
+                a {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+
+                &:hover {
+                    background: #F7F7F7;
+                    box-shadow: 0 0 20px #00000036;
+                }
+
+                .thin {
+                    font-weight: 400;
+                }
+
+                .big {
+                    font-weight: 800;
+                }
+
+                p {
+                    margin-bottom: 0;
+                    font-size: 13px;
+                }
+
+                &::before {
+                    content: url('https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/phone.svg');
+                    position: absolute;
+                    left: 6px;
+                    top: 20px;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-top: 2px solid #002e5b;
+                    border-left: 2px solid #002e5b;
+                    top: 22px;
+                    right: 6px;
+                    transform: rotate(-135deg);
+                }
+
+                &:nth-child(2) {
+                    top: 50px;
+
+                }
+
+                &:nth-child(3) {
+                    top: 100px;
+                }
             }
+
         }
 
         .hedaer-godziny {
@@ -516,7 +562,7 @@ header#header-kancelaria {
         }
 
         .header-fb {
-            padding: 6px 25px 0 25px;
+            padding: 16px 25px 0 25px;
 
             img {
                 height: 50px;
@@ -711,4 +757,6 @@ ol {
 @import "kontakt";
 @import "o-nas";
 @import "porady";
+@import "rodzaje_wypadkow";
+@import "megamenu";
 @import "responsive";

@@ -30,12 +30,12 @@ get_header(); ?>
                     <?php while (have_posts()) : the_post(); ?>
                     <div class="col-md-4">
                         <div class="wypadek-loop">
-                            <a href="#">
+                            <a href="<?php the_permalink() ?>">
                                 <div class="wypadek-loop-img"
                                     style="background:url('<?php the_post_thumbnail_url() ?>'); background-size:cover;border-top-right-radius: 1.5em; border-bottom-left-radius: 1.5em; height: 160px;">
                                 </div>
                             </a>
-                            <a href="#">
+                            <a href="<?php the_permalink() ?>">
                                 <h3><?php the_title() ?></h3>
                             </a>
                         </div>

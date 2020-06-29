@@ -58,6 +58,14 @@ jQuery(function ($) {
         });
 
 
+        $(function () {
+            $('#mobile-menu').click(function () {
+                $('#main-nav').toggleClass("mobile-hide");
+                $('#main-nav').toggleClass("mobile-show");
+            });
+        });
+
+
     });
 
     // Run the script once the window finishes loading
