@@ -2170,6 +2170,10 @@ ol li::before {
 }
 
 @media (max-width: 1200px) {
+  .home-jak-wyglada .dlaczego-kafle.jak-wyglada .dlaczego-kafel:first-child {
+    width: 100%;
+  }
+
   .dlaczego-kafle .dlaczego-kafel {
     width: 50%;
     padding: 1em;
@@ -2179,7 +2183,11 @@ ol li::before {
     width: 100%;
   }
 
-  .home-jak-wyglada .dlaczego-kafle.jak-wyglada .dlaczego-kafel:first-child {
+  .home-dlaczego-kafle.wypadek .dlaczego-kafle .dlaczego-kafel {
+    width: 50%;
+  }
+
+  .home-dlaczego-kafle.wypadek .dlaczego-kafle .dlaczego-kafel:first-child {
     width: 100%;
   }
 
@@ -2207,6 +2215,7 @@ ol li::before {
     transition: all 0.5s;
     padding-left: 20%;
     padding-right: 20%;
+    padding-top: 2rem;
   }
 
   header#header-kancelaria .navbar-nav .menu-cta a {
@@ -2225,6 +2234,19 @@ ol li::before {
   .home-formularz {
     background: #f7f7f7;
   }
+
+  .home-formularz.wypadek-formularz {
+    position: initial;
+    top: unset;
+    left: unset;
+    width: 100%;
+    margin: 0 auto 3rem auto;
+    padding: 0;
+  }
+
+  #before-header .before-header-wrapper .hedaer-godziny {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2235,6 +2257,10 @@ ol li::before {
   .home-cta a {
     float: unset;
     margin-top: 1em;
+  }
+
+  .home-dlaczego-kafle.wypadek .dlaczego-kafle .dlaczego-kafel {
+    width: 100%;
   }
 
   footer {
@@ -2258,6 +2284,10 @@ ol li::before {
   .home-oferta .home-oferta__card {
     display: block;
     margin: 2em 0;
+  }
+
+  #before-header .before-header-wrapper .hedaer-kontakt-wrapper {
+    display: none;
   }
 }
 

@@ -13,7 +13,7 @@ get_header(); ?>
     <section class="hero-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-lg-7">
                     <p>Jeśli pracujesz w Wielkiej Brytanii i przydarzył Ci się wypadek w pracy, to zgłoś się do nas.
                         Nasza kancelaria odszkodowań zajmuje się udzielaniem pomocy Polakom w ubieganiu się o
                         odszkodowanie za wypadek w pracy w Anglii.</p>
