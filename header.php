@@ -22,6 +22,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 </head>
+<?php
+if () {
+   
+}
+?>
 
 <body <?php body_class(); ?>>
     <div id="page" class="site">
@@ -40,7 +45,7 @@
                             alt="">
                     </div>
                     <div class="hedaer-godziny">
-                        <p class="thin">Godziny otwarcia:</p>
+                        <p class="thin">Ggodziny otwarcia:</p>
                         <p class="big">PN - PT: 8 - 20; SOB: 10 - 18</p>
                     </div>
                     <div class="hedaer-kontakt">

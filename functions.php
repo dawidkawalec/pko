@@ -206,6 +206,7 @@ function wp_bootstrap_starter_scripts() {
     //custom style (from scss)
     wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/inc/assets/scss/style.css' );
     wp_enqueue_style( 'swiper-style', get_stylesheet_directory_uri() . '/inc/assets/css/swiper.min.css' );
+    wp_enqueue_style( 'step-style', get_stylesheet_directory_uri() . '/inc/assets/css/style-step.css' );
 
     //Color Scheme
     /*if(get_theme_mod( 'preset_color_scheme_setting' ) && get_theme_mod( 'preset_color_scheme_setting' ) !== 'default') {
@@ -237,6 +238,9 @@ function wp_bootstrap_starter_scripts() {
     //custom style (from scss)
     wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/inc/assets/js/script.js' , array( 'jquery' ) );
     wp_enqueue_script( 'swiper-scripts', get_stylesheet_directory_uri() . '/inc/assets/js/swiper.min.js' );
+    wp_enqueue_script( 'step-scripts', get_stylesheet_directory_uri() . '/inc/assets/js/jquery.steps.js' );
+    wp_enqueue_script( 'step-main-scripts', get_stylesheet_directory_uri() . '/inc/assets/js/main-step.js' );
+    wp_enqueue_script( 'js-step-main-scripts', get_stylesheet_directory_uri() . '/inc/assets/js/jquery-3.3.1.min.js' );
 
 
 }
@@ -403,7 +407,25 @@ echo 'Fueled by <a href="http://www.wordpress.org" target="_blank">WordPress</a>
  
 add_filter('admin_footer_text', 'remove_footer_admin');  
 
-//
+
+
+
+// Custom function to return the post slug
+function the_slug($echo=true){
+  $slug = basename(get_permalink());
+  do_action('before_slug', $slug);
+  $slug = apply_filters('slug_filter', $slug);
+  if( $echo ) echo $slug;
+  do_action('after_slug', $slug);
+  return $slug;
+}
+ if (function_exists('the_slug')) { the_slug(); } 
+
+
+
+ 
+
+ //
 // custom wypadki
 //
 function dodanie_wypadkow_dawid() {
@@ -469,7 +491,7 @@ function dodanie_taxonomii_wypadki_dawid() {
  
   register_taxonomy('rodzaje_wypadkow',array('wypadki'), array(
     'hierarchical' => true,
-    'rewrite'  => array( 'slug' => '/', 'with_front' => false ),
+    'rewrite'  => array( 'slug' => 'rodzaje-wypadkow', 'with_front' => false ),
     'labels' => $labels,
     'show_ui' => true,
     'show_admin_column' => true,
@@ -604,7 +626,7 @@ function dodanie_forum_dawid() {
 }
 add_action( 'init', 'dodanie_forum_dawid', 0 );
 //
-// FAQ texonomia
+// forum texonomia
 //
 add_action( 'init', 'dodanie_taxonomii_forum_dawid', 0 );
  
@@ -634,16 +656,3 @@ function dodanie_taxonomii_forum_dawid() {
     'query_var' => true,
   ));
 }
-
-
-
-// Custom function to return the post slug
-function the_slug($echo=true){
-  $slug = basename(get_permalink());
-  do_action('before_slug', $slug);
-  $slug = apply_filters('slug_filter', $slug);
-  if( $echo ) echo $slug;
-  do_action('after_slug', $slug);
-  return $slug;
-}
- if (function_exists('the_slug')) { the_slug(); } 
