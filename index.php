@@ -35,15 +35,7 @@ get_header(); ?>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eveniet laudantium veritatis
-                        repudiandae alias aut, error ea velit, unde fugiat in impedit recusandae iusto deleniti
-                        explicabo modi itaque. Cumque dolore maiores dolorum placeat cum laudantium, dignissimos eos
-                        repellendus doloribus quam distinctio</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem harum consequuntur laborum aperiam,
-                        perferendis quaerat dolore sit ut soluta temporibus dolorem quam minima deleniti suscipit
-                        reprehenderit corporis officia error quas dolor? Beatae molestiae quia explicabo alias aut, vel
-                        hic laboriosam deserunt, autem veritatis rerum error labore dolorum soluta. Voluptatum,
-                        aspernatur.</p>
+                    <p>W dzisiejszych czasach wypadki w UK zdarzają się bardzo często, dlatego świadomość społeczeństwa w tematyce <a href="https://polskakancelariaodszkodowan.co.uk/porady/odszkodowanie-na-zasadach-brytyjskich/">odszkodowań</a> jest coraz większa. Pomimo to wciąż pojawia się wiele pytań oraz wątpliwości dotyczących tego, co robić po wypadku. Poniżej znajdują się najczęściej poruszane zagadnienia oraz fachowa wiedza, którą przedstawili doświadczeni <a href="https://polskakancelariaodszkodowan.co.uk/o-nas/">prawnicy od&nbsp;odszkodowań w&nbsp;UK</a> w UK. Zachęcamy do zapoznania się z treścią artykułów.</p>
                 </div>
             </div>
         </div>
