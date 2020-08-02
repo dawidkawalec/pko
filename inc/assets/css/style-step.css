@@ -3,6 +3,17 @@
   box-sizing: border-box;
 }
 
+#zglos-wypadek .wpcf7-not-valid-tip {
+  color: #f00;
+  font-weight: normal;
+  display: block;
+  z-index: 9999999;
+  background: #ffe4e4;
+  position: absolute;
+  font-size: 14px;
+  opacity: 1;
+}
+
 #zglos-wypadek :focus {
   outline: none;
 }
@@ -188,7 +199,7 @@
 #zglos-wypadek h3 {
   font-size: 22px;
   color: #453e79;
-  padding: 8px 25px;
+  padding: 8px;
   display: inline-block;
   border: 2px solid #F56922;
   margin-bottom: 75px;
@@ -280,12 +291,40 @@
   font-size: 17px;
 }
 
+
+
 #zglos-wypadek .form-control {
   height: 37px;
   border: none;
   border-bottom: 2px solid #e6e6e6;
   width: 100%;
   color: #666;
+  border-radius: 0;
+}
+
+#zglos-wypadek #wyslij-form {
+  z-index: 99999999;
+  position: absolute;
+  right: 51px;
+  bottom: 35px;
+  background: #002e5b;
+  padding: 0;
+  text-align: center;
+  width: 125px;
+  display: block;
+  height: 41px;
+  cursor: pointer;
+  border: 2px solid #002e5b;
+  border-radius: 0;
+  /*opacity: 0;*/
+}
+
+#zglos-wypadek .check-fix {
+  text-align: left;
+  border: none;
+  padding: 0;
+  margin-left: -1em;
+  padding-top: 1em;
 }
 
 #zglos-wypadek .form-control:focus {
@@ -321,7 +360,7 @@
 
 #zglos-wypadek textarea.form-control {
   padding: 8px 0;
-  background: url("../images/textarea-bg.png") no-repeat right bottom 3px;
+  height: 90px;
 }
 
 #zglos-wypadek .actions {
@@ -358,7 +397,7 @@
 }
 
 #zglos-wypadek .actions li a:before {
-  content: '\f301';
+  content: '';
   position: absolute;
   top: 14px;
   right: 28px;
@@ -377,7 +416,7 @@
 }
 
 #zglos-wypadek .actions li:first-child a:before {
-  content: '\f2ff';
+  content: '';
   position: absolute;
   top: 14px;
   left: 26px;
@@ -393,6 +432,7 @@
   width: 124px;
   background: #002E5B;
   color: #fff;
+  opacity: 0;
 }
 
 #zglos-wypadek .actions li:last-child a:hover {
@@ -400,7 +440,7 @@
 }
 
 #zglos-wypadek .actions li:last-child a:before {
-  content: '\f26b';
+  content: '';
   position: absolute;
   top: 13px;
   right: 28px;
@@ -474,7 +514,7 @@
   width: 63%;
   color: #666;
   font-size: .6em;
-  margin-top: 2.5em;
+  margin-top: 2 .5em;
 }
 
 #zglos-wypadek .br-hide br {
@@ -571,6 +611,20 @@
     -o-box-shadow: none;
   }
 
+  #zglos-wypadek #wyslij-form {
+    right: 17px;
+    bottom: -644px;
+  }
+
+  #zglos-wypadek .wpcf7-response-output {
+    position: absolute;
+    bottom: -600px;
+    left: 0;
+    z-index: 99999;
+  }
+
+
+
   #zglos-wypadek .image-holder {
     width: 100%;
   }
@@ -596,8 +650,9 @@
   }
 
   #zglos-wypadek .wrapper {
-    height: 1201px;
+    height: 1301px;
     background: none;
+    margin-top: 80px;
   }
 
   #zglos-wypadek .checkbox-circle {
@@ -605,12 +660,13 @@
   }
 
   #zglos-wypadek .wizard {
-    height: 100%;
+    height: 1201px;
+    width: 100%;
   }
 
   #zglos-wypadek .wizard>.steps {
     right: 50%;
-    top: 52%;
+    top: 55%;
     -webkit-transform: translateX(50%);
     transform: translateX(50%);
   }

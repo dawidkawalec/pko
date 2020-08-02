@@ -417,6 +417,12 @@
 }
 
 
+#kontakt-page .home-formularz {
+    .col-lg-6 {
+        margin: 1em 0;
+    }
+}
+
 .home-formularz {
     background: rgb(247, 247, 247);
     background: linear-gradient(90deg, rgba(247, 247, 247, 1) 80%, rgba(255, 255, 255, 1) 80%);
@@ -545,6 +551,8 @@
                         height: 100%;
                         display: block;
                         padding: 2em;
+                        line-height: 1.5;
+                        padding-right: 3em;
                         color: $primary;
                         font-size: 1.2em;
                         font-weight: 800;

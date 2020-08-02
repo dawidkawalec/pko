@@ -656,3 +656,37 @@ function dodanie_taxonomii_forum_dawid() {
     'query_var' => true,
   ));
 }
+
+add_action('acf/init', 'my_acf_op_init');
+function my_acf_op_init() {
+
+    // Check function exists.
+    if( function_exists('acf_add_options_page') ) {
+
+        // Add parent.
+        $parent = acf_add_options_page(array(
+            'page_title'  => __('Personalizacja motywu'),
+            'menu_title'  => __('Personalizacja motywu'),
+            'redirect'    => false,
+        ));
+
+        // Add sub page.
+        $child = acf_add_options_page(array(
+            'page_title'  => __('Opinie'),
+            'menu_title'  => __('Opinie'),
+            'parent_slug' => $parent['menu_slug'],
+        ));
+        // Add sub page.
+        $child2 = acf_add_options_page(array(
+            'page_title'  => __('Zespół'),
+            'menu_title'  => __('Zespół'),
+            'parent_slug' => $parent['menu_slug'],
+        ));
+        // Add sub page.
+        $child3 = acf_add_options_page(array(
+            'page_title'  => __('Porady'),
+            'menu_title'  => __('Porady'),
+            'parent_slug' => $parent['menu_slug'],
+        ));
+    }
+}

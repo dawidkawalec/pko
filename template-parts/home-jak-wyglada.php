@@ -5,66 +5,41 @@
  */
 
 ?>
-
+<?php if ( get_field('home_kroki_tytul_sekcji') ) : ?>
 <section class="home-jak-wyglada">
     <div class="container">
         <div class="row section-content">
             <div class="col-md-12 text-center">
-                <p class="before-title">Jak wygląda</p>
-                <h2>Proces odszkodowawczy?</h2>
+                <p class="before-title"> <?php echo get_field('home_kroki_tekst_nad_tytulem'); ?>
+                </p>
+                <h2> <?php echo get_field('home_kroki_tytul_sekcji'); ?>
+                </h2>
             </div>
         </div>
         <div class="dlaczego-kafle jak-wyglada">
+
+            <?php if ( have_rows('home_kroki_kroki_kafle_pole_powtarzalne') ) : ?>
+
+            <?php while( have_rows('home_kroki_kroki_kafle_pole_powtarzalne') ) : the_row(); ?>
+
             <div class="dlaczego-kafel">
                 <div class="dlaczego-kafel-container">
                     <div class="ikona">
-                        <img src="/wp-content/uploads/2020/04/law.svg" alt="">
-                        <div class="ikona-numer">1</div>
+                        <?php if ( get_sub_field('ikona') ) : $image = get_sub_field('ikona'); ?>
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                        <?php endif; ?>
+                        <div class="ikona-numer"><?php the_sub_field('numer_kroku'); ?></div>
                     </div>
-                    <p>Przyjęcie<br>sprawy
-                    </p>
+                    <p><?php the_sub_field('tekst'); ?></p>
                 </div>
             </div>
-            <div class="dlaczego-kafel">
-                <div class="dlaczego-kafel-container">
-                    <div class="ikona">
-                        <img src="/wp-content/uploads/2020/05/002-law.svg" alt="">
-                        <div class="ikona-numer">2</div>
-                    </div>
-                    <p>Potwierdzenie<br>winy
-                    </p>
-                </div>
-            </div>
-            <div class="dlaczego-kafel">
-                <div class="dlaczego-kafel-container">
-                    <div class="ikona">
-                        <img src="/wp-content/uploads/2020/05/003-inheritance.svg" alt="">
-                        <div class="ikona-numer">3</div>
-                    </div>
-                    <p>Wycena<br>odszkodowania
-                    </p>
-                </div>
-            </div>
-            <div class="dlaczego-kafel">
-                <div class="dlaczego-kafel-container">
-                    <div class="ikona">
-                        <img src="/wp-content/uploads/2020/05/004-judge.svg" alt="">
-                        <div class="ikona-numer">4</div>
-                    </div>
-                    <p>Negocjacja<br>odszkodowania
-                    </p>
-                </div>
-            </div>
-            <div class="dlaczego-kafel">
-                <div class="dlaczego-kafel-container">
-                    <div class="ikona">
-                        <img src="/wp-content/uploads/2020/05/005-browser.svg" alt="">
-                        <div class="ikona-numer">5</div>
-                    </div>
-                    <p>Przelew<br>odszkodowania
-                    </p>
-                </div>
-            </div>
+
+            <?php endwhile; ?>
+
+            <?php endif; ?>
+
+
         </div>
     </div>
 </section>
+<?php endif; ?>

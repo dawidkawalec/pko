@@ -7,66 +7,47 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/hero-title');?>
 <div id="kontakt-page">
-
+    <?php if ( get_field('kontakt_tytul_sekcji') ) : ?>
     <section class="home-formularz">
         <div class="container">
             <div class="row section-content">
                 <div class="col-lg-7 text-left">
-                    <p class="before-title">Kontakt</p>
-                    <h2>Jak się z nami skontaktować?</h2>
-                    <p class="bold">Polska Kancelaria Odszkodowań™ – Progressive Solicitors jest polsko-angielską
-                        kancelarią zajmującą się uzyskiwaniem odszkodowania w UK, działającą na zasadzie NO WIN – NO
-                        FEE.
-                    </p>
+                    <p class="before-title"><?php echo get_field('kontakt_nad_tytulem'); ?></p>
+                    <h2><?php echo get_field('kontakt_tytul_sekcji'); ?></h2>
+                    <p class="bold"><?php echo get_field('kontakt_opis_pod_tytulem'); ?></p>
 
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="kontakt-kraj">
-                                <h3>Kontakt z Wielkiej Brytanii</h3>
+                                <h3><?php echo get_field('kontakt_karta_kontakt_tytul_1'); ?></h3>
                                 <div class="kontakt-adres">
-                                    <p>100A Market Street, Hyde,<br>
-                                        Manchester SK14 1ES</p>
+                                    <p><?php echo get_field('kontakt_karta_kontakt_adres_1'); ?></p>
                                 </div>
                                 <div class="kontakt-mail">
-                                    <a
-                                        href="mailto:info@polskakancelariaodszkodowan.co.uk">info@polskakancelariaodszkodowan.co.uk</a>
+                                    <?php echo get_field('kontakt_karta_kontakt_email_1'); ?>
                                 </div>
                                 <div class="kontakt-godziny">
-                                    <p>Pn. - Pt.: 8:00-18:00<br>
-                                        Pn. - Pt.: 18:00-20:00 emergency contact<br>
-                                        Sob.: 10:00-18:00 emergency contact</p>
+                                    <p><?php echo get_field('kontakt_karta_kontakt_godziny_1'); ?></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="kontakt-kraj">
-                                <h3>Kontakt z Polski</h3>
+                                <h3><?php echo get_field('kontakt_karta_kontakt_tytul_2'); ?></h3>
                                 <div class="kontakt-adres">
-                                    <p>100A Market Street, Hyde,<br>
-                                        Manchester SK14 1ES</p>
+                                    <p><?php echo get_field('kontakt_karta_kontakt_adres_2'); ?></p>
                                 </div>
                                 <div class="kontakt-mail">
-                                    <a
-                                        href="mailto:info@polskakancelariaodszkodowan.co.uk">info@polskakancelariaodszkodowan.co.uk</a>
+                                    <?php echo get_field('kontakt_karta_kontakt_email_2'); ?>
                                 </div>
                                 <div class="kontakt-godziny">
-                                    <p>Pn. - Pt.: 8:00-18:00<br>
-                                        Pn. - Pt.: 18:00-20:00 emergency contact<br>
-                                        Sob.: 10:00-18:00 emergency contact</p>
+                                    <p><?php echo get_field('kontakt_karta_kontakt_godziny_2'); ?></p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <h2 style="margin-top: 1em;">Akceptujemy kontakt poprzez:</h2>
-                    <p>Facebook, Whats App, Czat, E-mail, Telefon</p>
-                    <h3>JESTEŚMY NOWOCZEŚNI TECHNOLOGICZNIE: </h3>
-                    <p>Wychodząc naprzeciw oczekiwaniom naszych klientów używamy
-                        najnowszych technologii kontaktu z klientem. Nie ważne gdzie jesteś, w Polsce czy w Wielkiej
-                        Brytanii, możesz poprowadzić z nami sprawę korzystając z telefonu, emaila, Whats App, czatu,
-                        Skypa czy VideoSpotkania. Dokumenty możesz podpisywać elektronicznie – bez konieczności ich
-                        drukowania czy wychodzenia na pocztę. Dla tradycjonalistów jesteśmy dostępni w naszych biurach.
-                    </p>
+                    <?php echo get_field('kontakt_opis_cd'); ?>
 
                 </div>
                 <div class="col-lg-1"></div>
@@ -79,7 +60,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-
+    <?php endif; ?>
 
 </div>
 <?php get_template_part( 'template-parts/home-cta');?>

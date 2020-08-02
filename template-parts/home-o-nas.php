@@ -5,38 +5,37 @@
  */
 
 ?>
-
+<?php if ( get_field('home_o_nas_tytul_sekcji') ) : ?>
 <section class="home-o-nas">
     <div class="container home-o-nas-wrapper">
-        <img src="https://dev.polskakancelariaodszkodowan.co.uk/wp-content/uploads/2020/04/sean-pollock-PhYq704ffdA-unsplash.jpg"
-            alt="">
+        <?php if ( get_field('home_o_nas_obrazek') ) : $image = get_field('home_o_nas_obrazek'); ?>
+
+        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
+
         <div class="row">
             <div class="col-md-6">
             </div>
             <div class="col-md-6">
                 <div class="home-o-nas-content">
-                    <p class="before-title">Więcej o nas</p>
-                    <h2>Polska Kancelaria Odszkodowań ™</h2>
+                    <p class="before-title"><?php echo get_field('home_o_nas_tekst_nad_tytulem'); ?></p>
+
+
+                    <h2><?php echo get_field('home_o_nas_tytul_sekcji'); ?></h2>
                     <div id="accordion-o-nas">
                         <div id="pytanie1">
                             <div id="headingOne">
                                 <h3>
                                     <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                                         aria-controls="collapseOne" class="collapse">
-                                        <span>KIM JESTEŚMY?</span>
+                                        <span><?php echo get_field('home_o_nas_pytanie_1'); ?></span>
                                     </a>
                                 </h3>
                             </div>
 
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                 data-parent="#accordion-o-nas">
-                                <p>
-                                    Polska Kancelaria Odszkodowań™ jest polsko – angielską kancelarią prawną zajmującą
-                                    się uzyskiwaniem odszkodowania w UK, działającą na zasadzie NO WIN – NO FEE
-                                    z gwarancją przejrzystości kosztów. Posiadamy w sumie 65 lat doświadczenia, jako
-                                    prawnicy od odszkodowań. <a href="#">Zobacz najczęściej zadawane pytania o
-                                        odszkodowania w UK.</a>
-                                </p>
+                                <?php echo get_field('home_o_nas_odpowiedz_1'); ?>
                             </div>
                         </div>
 
@@ -46,20 +45,14 @@
                                 <h3>
                                     <a data-toggle="collapse" data-target="#collapse2" aria-expanded="true"
                                         aria-controls="collapse2" class="collapse collapsed">
-                                        <span>DLACZEGO MY?</span>
+                                        <span><?php echo get_field('home_o_nas_pytanie_2'); ?></span>
                                     </a>
                                 </h3>
                             </div>
 
                             <div id="collapse2" class="collapse" aria-labelledby="heading2"
                                 data-parent="#accordion-o-nas">
-                                <p>
-                                    Polska Kancelaria Odszkodowań™ jest polsko – angielską kancelarią prawną zajmującą
-                                    się uzyskiwaniem odszkodowania w UK, działającą na zasadzie NO WIN – NO FEE
-                                    z gwarancją przejrzystości kosztów. Posiadamy w sumie 65 lat doświadczenia, jako
-                                    prawnicy od odszkodowań. <a href="#">Zobacz najczęściej zadawane pytania o
-                                        odszkodowania w UK.</a>
-                                </p>
+                                <?php echo get_field('home_o_nas_odpowiedz_2'); ?>
                             </div>
                         </div>
 
@@ -69,20 +62,14 @@
                                 <h3>
                                     <a data-toggle="collapse" data-target="#collapse3" aria-expanded="true"
                                         aria-controls="collapse3" class="collapse collapsed">
-                                        <span>JESTEŚMY NOWOCZEŚNI TECHNOLOGICZNIE</span>
+                                        <span><?php echo get_field('home_o_nas_pytanie_3'); ?></span>
                                     </a>
                                 </h3>
                             </div>
 
                             <div id="collapse3" class="collapse" aria-labelledby="heading3"
                                 data-parent="#accordion-o-nas">
-                                <p>
-                                    Polska Kancelaria Odszkodowań™ jest polsko – angielską kancelarią prawną zajmującą
-                                    się uzyskiwaniem odszkodowania w UK, działającą na zasadzie NO WIN – NO FEE
-                                    z gwarancją przejrzystości kosztów. Posiadamy w sumie 65 lat doświadczenia, jako
-                                    prawnicy od odszkodowań. <a href="#">Zobacz najczęściej zadawane pytania o
-                                        odszkodowania w UK.</a>
-                                </p>
+                                <?php echo get_field('home_o_nas_odpowiedz_3'); ?>
                             </div>
                         </div>
 
@@ -90,9 +77,11 @@
 
 
                     </div>
-                    <a href="#" class="btn-cta">Skontaktuj się z nami</a>
+                    <a href="<?php echo get_field('home_o_nas_cta_link'); ?>"
+                        class="btn-cta"><?php echo get_field('home_o_nas_cta_anchor'); ?></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<?php endif; ?>

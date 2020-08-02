@@ -41,6 +41,13 @@ jQuery(function ($) {
             }
         })
 
+        $(function () {
+            $('#mobile-menu').click(function () {
+                $('#main-nav').toggleClass("mobile-hide");
+                $('#main-nav').toggleClass("mobile-show");
+            });
+        });
+
 
         //dodanie klasy w kategoriach
 
@@ -108,6 +115,11 @@ jQuery(function ($) {
 
     // Run the script once the window finishes loading
     $(window).load(function () {
+
+
+
+
+
         //formularz
         //1st step
         $('#kategoria-zdarzenia').on('change', function () {
@@ -2040,6 +2052,21 @@ jQuery(function ($) {
         })
 
         //formularz
+
+        //Popup po wyslaniu form
+
+        document.addEventListener('wpcf7mailsent', function (event) {
+            if ('793' == event.detail.contactFormId) {
+                location = '/#dziekujemy_za_kontakt/';
+                $('#thankyou_popup').addClass("show");
+            }
+        }, false);
+
+        $('.close_pop').click(function () {
+            $('#thankyou_popup').removeClass("show");
+        });
+
+
     });
 
 });

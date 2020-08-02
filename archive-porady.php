@@ -18,7 +18,7 @@ get_header(); ?>
                 yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                 }
                 ?>
-                <h1>Porady</h1>
+                <h1><?php echo get_field('porady_h1', 'options'); ?> </h1>
             </div>
         </div>
     </div>
@@ -30,12 +30,8 @@ get_header(); ?>
         <div class="container">
             <div class="row section-content">
                 <div class="col-md-12 text-center">
-                    <h2>Porady - znajdź odpowiedź lub zadaj nam pytanie</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut doloribus animi quisquam,
-                        deleniti, maxime sunt corporis vitae adipisci soluta odio. Quidem iste explicabo alias rem
-                        excepturi a exercitationem nemo quibusdam autem consequatur itaque, asperiores ratione nam
-                        doloremque mollitia quo quos. Laudantium, inventore accusamus recusandae illo molestias commodi
-                        maxime veritatis.</p>
+                    <h2><?php echo get_field('porady_tytul_sekcji', 'options'); ?></h2>
+                    <?php echo get_field('porady_opis_pod_tytulem', 'options'); ?>
                 </div>
             </div>
         </div>
@@ -48,27 +44,45 @@ get_header(); ?>
                 <div class="col-lg-4 text-center">
                     <a href="#zadaj-pytanie">
                         <div class="porady-boxy-box">
-                            <img src="/wp-content/uploads/2020/05/question.svg" alt="">
-                            <h3>Zadaj nam pytanie</h3>
-                            <p>i uzyskaj odpowiedź</p>
+                            <?php if ( get_field('porady_ikona_kafel_1', 'options') ) : $image = get_field('porady_ikona_kafel_1', 'options'); ?>
+
+                            <!-- Full size image -->
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                            <?php endif; ?>
+
+                            <h3><?php echo get_field('porady_tytul_kafel_1', 'options'); ?></h3>
+                            <p><?php echo get_field('porady_opis_kafel_1', 'options'); ?></p>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 text-center">
                     <a href="#video-porady">
                         <div class="porady-boxy-box">
-                            <img src="/wp-content/uploads/2020/05/question.svg" alt="">
-                            <h3>VIDEO porady</h3>
-                            <p>Sprawdź nasze video porady</p>
+                            <?php if ( get_field('porady_ikona_kafel_2', 'options') ) : $image = get_field('porady_ikona_kafel_2', 'options'); ?>
+
+                            <!-- Full size image -->
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                            <?php endif; ?>
+
+                            <h3><?php echo get_field('porady_tytul_kafel_2', 'options'); ?></h3>
+                            <p><?php echo get_field('porady_opis_kafel_2', 'options'); ?></p>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 text-center">
                     <a href="#pytania">
                         <div class="porady-boxy-box">
-                            <img src="/wp-content/uploads/2020/05/question.svg" alt="">
-                            <h3>Pytania na forum</h3>
-                            <p>uzyskaj odpowiedź na każde pytanie</p>
+                            <?php if ( get_field('porady_ikona_kafel_3', 'options') ) : $image = get_field('porady_ikona_kafel_3', 'options'); ?>
+
+                            <!-- Full size image -->
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                            <?php endif; ?>
+
+                            <h3><?php echo get_field('porady_tytul_kafel_2', 'options'); ?></h3>
+                            <p><?php echo get_field('porady_opis_kafel_3', 'options'); ?></p>
                         </div>
                     </a>
                 </div>

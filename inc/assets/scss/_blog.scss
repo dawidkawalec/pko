@@ -81,6 +81,7 @@
             padding: .5em 1em;
             position: relative;
             transition: $all_tr;
+            display: inline-block;
 
             &::after {
                 position: absolute;
