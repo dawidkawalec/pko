@@ -49,6 +49,16 @@ jQuery(function ($) {
         });
 
 
+        //poprawienie menu mobile
+
+        $(function () {
+
+            $('.dropdown.menu-item-has-children .dropdown.menu-item-has-children>.dropdown-menu').addClass("show");
+
+
+        });
+
+
         //dodanie klasy w kategoriach
 
         $(function () {

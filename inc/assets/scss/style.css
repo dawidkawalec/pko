@@ -803,6 +803,22 @@ ol li::before {
   background: #DD4A00;
 }
 
+.dropdown.menu-item-has-children .dropdown.menu-item-has-children {
+  position: relative;
+  display: block;
+  padding: .5em 2em .5em .5em;
+}
+
+.dropdown.menu-item-has-children .dropdown.menu-item-has-children ul {
+  margin-top: .5em !important;
+}
+
+.dropdown.menu-item-has-children .dropdown.menu-item-has-children ul li {
+  position: relative;
+  display: block;
+  padding: .5em 2em .5em .5em;
+}
+
 .home-banner {
   background: url("/wp-content/uploads/2020/04/AdobeStock_246426078.jpg") no-repeat center center;
   background-size: cover;
@@ -1725,7 +1741,7 @@ ol li::before {
 
 .home-formularz.wypadek-formularz {
   position: fixed;
-  top: 140px;
+  top: 160px;
   left: 60%;
   width: 30%;
   max-width: 450px;
@@ -2280,13 +2296,19 @@ ol li::before {
     background: #fff;
     top: 57px;
     left: -20%;
-    height: 100vh;
+    height: 87.5vh;
     overflow: hidden;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 2rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  #main-nav.mobile-show .menu-cta a {
+    margin-bottom: 10vh !important;
   }
 
   header#header-kancelaria .navbar-nav .menu-cta a {

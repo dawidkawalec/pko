@@ -42,13 +42,20 @@
         background: #fff;
         top: 57px;
         left: -20%;
-        height: 100vh;
+        height: 87.5vh;
         overflow: hidden;
         transition: $all_tr;
         padding-left: 20%;
         padding-right: 20%;
         padding-top: 2rem;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        .menu-cta a {
+            margin-bottom: 10vh !important;
+        }
     }
+
 
     header#header-kancelaria .navbar-nav .menu-cta a {
         margin-left: 0;

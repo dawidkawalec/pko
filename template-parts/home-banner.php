@@ -7,7 +7,7 @@
 ?>
 
 <section class="home-banner"
-    style="<?php if ( get_field('home_obraz_w_tle') ) : ?> background: url(<?php echo get_field('home_obraz_w_tle'); ?>)<?php endif; ?> no-repeat center center; background-size: cover;">
+    style="<?php if ( get_field('home_obraz_w_tle') ) : ?> background: url(<?php echo get_field('home_obraz_w_tle'); ?>)<?php endif; ?> no-repeat center right; background-size: cover;">
     <div class="container">
         <div class="row">
             <div class="col-md-6">

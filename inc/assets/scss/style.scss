@@ -806,6 +806,24 @@ ol {
     }
 }
 
+.dropdown.menu-item-has-children .dropdown.menu-item-has-children {
+    position: relative;
+    display: block;
+    padding: .5em 2em .5em .5em;
+
+    ul {
+        margin-top: .5em !important;
+
+        li {
+            position: relative;
+            display: block;
+            padding: .5em 2em .5em .5em;
+
+        }
+    }
+}
+
+
 //imports 
 @import "home";
 @import "wypadek";
