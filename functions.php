@@ -444,6 +444,7 @@ function dodanie_wypadkow_dawid() {
 		'not_found'           => __( 'Nie znaleziono'),
         'not_found_in_trash'  => __( 'Nie znaleziono w smieciach')
         
+        
 	);
 	$args = array(
 		'label'               => __( 'Wypadki'),
@@ -463,6 +464,7 @@ function dodanie_wypadkow_dawid() {
 		'taxonomies' 	      => array('post_tag'),
 		'publicly_queryable'  => true,
         'capability_type'     => 'page',
+        'rewrite'  => array( 'slug' => 'odszkodowania-uk', 'with_front' => false )
     );
 	register_post_type( 'wypadki', $args );
 }
